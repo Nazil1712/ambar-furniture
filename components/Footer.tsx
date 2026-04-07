@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Brand */}
         <div className="md:col-span-1">
           <Link href="/" className="inline-block mb-4">
-            <span className="font-serif text-2xl font-bold tracking-tight text-primary dark:text-secondary-light">
+            <span className="font-serif text-2xl font-bold tracking-tight text-primary dark:text-primary-light">
               Ambar.
             </span>
           </Link>
@@ -19,19 +19,19 @@ export default function Footer() {
           <div className="flex gap-4">
             <a
               href="#"
-              className="p-2 bg-background rounded-full text-foreground hover:text-primary transition-colors hover:bg-secondary/20"
+              className="p-2 bg-background rounded-full text-foreground hover:text-primary transition-colors hover:bg-primary/20"
             >
               <Facebook className="w-4 h-4" />
             </a>
             <a
               href="#"
-              className="p-2 bg-background rounded-full text-foreground hover:text-primary transition-colors hover:bg-secondary/20"
+              className="p-2 bg-background rounded-full text-foreground hover:text-primary transition-colors hover:bg-primary/20"
             >
               <Instagram className="w-4 h-4" />
             </a>
             <a
               href="#"
-              className="p-2 bg-background rounded-full text-foreground hover:text-primary transition-colors hover:bg-secondary/20"
+              className="p-2 bg-background rounded-full text-foreground hover:text-primary transition-colors hover:bg-primary/20"
             >
               <Twitter className="w-4 h-4" />
             </a>

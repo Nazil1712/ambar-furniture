@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #4F46E5; /* Vibrant Indigo */
-  --color-primary-light: #6366F1;
-  --color-secondary: #0EA5E9; /* Bright Sky Blue */
-  --color-secondary-light: #38BDF8;
+  --color-primary: #03fcad; /* Vibrant Green */
+  --color-primary-light: #4dfccd;
+  --color-secondary: #00d28d; /* Complementary Darker Green */
+  --color-secondary-light: #33ffc3;
   --color-background: #F8FAFC; /* Clean, light background */
   --color-surface: #FFFFFF;
   --color-foreground: #0F172A; /* Slate 900 for high contrast */

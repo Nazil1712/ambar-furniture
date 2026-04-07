@@ -1,15 +1,21 @@
+"use client";
+
 import Link from "next/link";
 // import Image from 'next/image';
-import { mockProducts } from "../lib/mockData";
+import { featuredProductsArr, mockProducts } from "../lib/mockData";
 import ProductCard from "@/components/ProductCard";
 import { ArrowRight, Star } from "lucide-react";
 import Image from "next/image";
 import imgHero from "@/app/images/sultan/Sultan-3.png";
+import { motion } from "framer-motion";
+import sultan_toy from "../app/images/toys/Sultan_toy.png";
+import bed_toy from "../app/images/toys/Bed_toy.png";
+import kitchen_cab_toy from "../app/images/toys/Kitchen_cabinet_toy.png";
 
 import Typewriter from "@/components/Typewriter";
 
 export default function Home() {
-  const featuredProducts = mockProducts.slice(0, 4);
+  const featuredProducts = featuredProductsArr;
   const heroWords = [
     "Sultan",
     "Folding Bed",
@@ -20,34 +26,77 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full">
       {/* Hero Section */}
-      <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[95vh] min-h-[700px] flex items-center justify-center overflow-hidden bg-black">
+        {/* Background Gradient */}
         <div className="absolute inset-0 z-0">
-          <Image
-            src={imgHero}
-            alt="Premium Furniture Showroom"
-            fill
-            className="object-cover"
-            priority
+          <div
+            className="absolute inset-0 bg-linear-to-b from-black via-black/80 to-primary/40"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle at bottom, rgba(3, 252, 173, 0.4) 0%, transparent 70%)",
+            }}
           />
-          <div className="absolute inset-0 bg-black/30 dark:bg-black/50" />
+          <div className="absolute bottom-0 left-0 right-0 h-px bg-primary/20 backdrop-blur-sm" />
+
+          {/* Decorative Background Text */}
+          <div className="absolute -bottom-10 left-0 right-0 flex justify-center px-4 opacity-[0.03] select-none pointer-events-none">
+            <span className="text-[15vw] font-black tracking-tighter text-white whitespace-nowrap leading-none">
+              AMBAR
+            </span>
+          </div>
         </div>
 
-        <div className="container relative z-10 mx-auto px-6 md:px-12 text-center text-white">
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 animate-in slide-in-from-bottom duration-700 fade-in">
-            We build <br className="md:hidden" />
+        {/* Floating 3D Asset */}
+        {/* <motion.div
+          initial={{ opacity: 0, y: 100, rotate: -5 }}
+          animate={{
+            opacity: 1,
+            y: [50, 30, 50],
+            rotate: [-5, -3, -5],
+          }}
+          transition={{
+            opacity: { duration: 1 },
+            y: { duration: 4, repeat: Infinity, ease: "easeInOut" },
+            rotate: { duration: 4, repeat: Infinity, ease: "easeInOut" },
+          }}
+          className="absolute bottom-12 left-1/2 -translate-x-1/2 z-10 hidden md:flex flex-row items-center justify-center gap-4 md:gap-8 w-full max-w-6xl px-6"
+        >
+          <div className="relative w-40 md:w-56 lg:w-72 aspect-square drop-shadow-[0_20px_50px_rgba(3,252,173,0.3)]">
+            <Image
+              src={sultan_toy}
+              alt="3D Furniture Asset"
+              fill
+              className="object-contain"
+            />
+          </div>
+          <div className="relative w-40 md:w-56 lg:w-72 aspect-square drop-shadow-[0_20px_50px_rgba(3,252,173,0.3)]">
+            <Image
+              src={bed_toy}
+              alt="3D Furniture Asset"
+              fill
+              className="object-contain"
+            />
+          </div>
+        </motion.div> */}
+
+        <div className="container relative z-20 mx-auto px-6 md:px-12 text-center text-white">
+          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8 animate-in slide-in-from-bottom duration-1000 fade-in">
+            We Manufacture <br className="md:hidden" />
             <Typewriter words={heroWords} />
           </h1>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10 text-white/95 animate-in slide-in-from-bottom duration-700 delay-150 fade-in fill-mode-both">
-            Elevate your living space with our premium, handcrafted furniture.
-            Blending timeless elegance with modern functionality.
+          <p className="text-lg md:text-2xl max-w-3xl mx-auto mb-12 text-white/80 leading-relaxed animate-in slide-in-from-bottom duration-1000 delay-200 fade-in fill-mode-both">
+            We believe in combining innovative design, sustainable practices,
+            and exceptional craftsmanship to bring your vision to life.
           </p>
-          <div className="animate-in slide-in-from-bottom duration-700 delay-300 fade-in fill-mode-both">
+          <div className="animate-in slide-in-from-bottom duration-1000 delay-400 fade-in fill-mode-both">
             <Link
               href="/products"
-              className="inline-flex items-center gap-2 bg-primary hover:bg-primary-light text-white px-8 py-4 rounded-full font-semibold shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95"
+              className="inline-flex items-center gap-3 bg-primary hover:bg-primary-light text-black px-10 py-5 rounded-full font-bold text-lg shadow-xl shadow-primary/20 transition-all hover:scale-105 active:scale-95"
             >
-              Explore Products
-              <ArrowRight className="w-5 h-5" />
+              EXPLORE Products
+              <div className="bg-black/10 p-1 rounded-full">
+                <ArrowRight className="w-5 h-5" />
+              </div>
             </Link>
           </div>
         </div>
@@ -132,7 +181,7 @@ export default function Home() {
             ].map((testimonial, i) => (
               <div
                 key={i}
-                className="bg-gradient-to-br from-indigo-50 to-white dark:from-slate-800 dark:to-slate-900 border border-indigo-100 dark:border-slate-700 shadow-md p-8 rounded-2xl flex flex-col items-center text-center transition-transform hover:-translate-y-1"
+                className="bg-gradient-to-br from-emerald-50/50 to-white dark:from-stone-900 dark:to-stone-950 border border-primary/10 dark:border-primary/20 shadow-md p-8 rounded-2xl flex flex-col items-center text-center transition-transform hover:-translate-y-1"
               >
                 <div className="flex text-amber-500 mb-6 gap-1">
                   {[...Array(5)].map((_, i) => (
@@ -146,7 +195,7 @@ export default function Home() {
                   <h4 className="font-bold text-slate-900 dark:text-white text-lg">
                     {testimonial.name}
                   </h4>
-                  <p className="text-sm font-semibold text-indigo-600 dark:text-indigo-400 mt-1">
+                  <p className="text-sm font-semibold text-primary dark:text-primary-light mt-1">
                     {testimonial.role}
                   </p>
                 </div>

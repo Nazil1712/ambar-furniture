@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface TypewriterProps {
   words: string[];
@@ -12,12 +12,12 @@ interface TypewriterProps {
 
 export default function Typewriter({
   words,
-  typingSpeed = 150,
-  deletingSpeed = 100,
+  typingSpeed = 50,
+  deletingSpeed = 50,
   pauseTime = 2000,
 }: TypewriterProps) {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const [currentText, setCurrentText] = useState('');
+  const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export default function Typewriter({
     if (!isDeleting && currentText === word) {
       // Pause at the end of typing
       timeout = setTimeout(() => setIsDeleting(true), pauseTime);
-    } else if (isDeleting && currentText === '') {
+    } else if (isDeleting && currentText === "") {
       // Move to next word after deleting
       setIsDeleting(false);
       setCurrentWordIndex((prev) => (prev + 1) % words.length);
@@ -43,7 +43,15 @@ export default function Typewriter({
     }
 
     return () => clearTimeout(timeout);
-  }, [currentText, isDeleting, currentWordIndex, words, typingSpeed, deletingSpeed, pauseTime]);
+  }, [
+    currentText,
+    isDeleting,
+    currentWordIndex,
+    words,
+    typingSpeed,
+    deletingSpeed,
+    pauseTime,
+  ]);
 
   return (
     <span className="relative inline-block min-w-[3ch]">

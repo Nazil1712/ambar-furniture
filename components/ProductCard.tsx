@@ -10,7 +10,7 @@ export default function ProductCard({ product }: { product: Product }) {
     <motion.div
       whileHover={{ y: -8 }}
       transition={{ duration: 0.3 }}
-      className="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200 dark:border-slate-700 transition-all"
+      className="group bg-surface dark:bg-stone-900 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-muted/10 dark:border-white/5 transition-all"
     >
       <Link href={`/products/${product.id}`} className="block relative aspect-square overflow-hidden bg-muted/10">
         <Image
@@ -24,25 +24,25 @@ export default function ProductCard({ product }: { product: Product }) {
       </Link>
       
       <div className="p-6">
-        <div className="text-xs font-bold tracking-wider text-indigo-600 dark:text-indigo-400 uppercase mb-2">
+        <div className="text-xs font-bold tracking-wider text-primary dark:text-primary-light uppercase mb-2">
           {product.category}
         </div>
-        <h3 className="font-serif text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+        <h3 className="font-serif text-xl font-bold mb-2 text-foreground dark:text-white group-hover:text-primary transition-colors">
           {product.name}
         </h3>
-        <p className="text-slate-600 dark:text-slate-300 text-sm line-clamp-2 mb-4 font-medium">
+        <p className="text-muted dark:text-stone-400 text-sm line-clamp-2 mb-4 font-medium">
           {product.shortDescription}
         </p>
         
         <div className="flex items-center justify-between mt-auto">
           {product.price && (
-            <span className="font-bold text-lg text-slate-900 dark:text-white">
+            <span className="font-bold text-lg text-foreground dark:text-white">
               ${product.price}
             </span>
           )}
           <Link
             href={`/products/${product.id}`}
-            className="text-sm font-bold text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 hover:underline underline-offset-4 transition-colors"
+            className="text-sm font-bold text-primary dark:text-primary-light hover:text-primary-light hover:underline underline-offset-4 transition-colors"
           >
             View Details
           </Link>

@@ -30,16 +30,19 @@ export default function Navbar() {
   return (
     <header
       className={clsx(
-        "fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 border-b border-white/10",
+        "fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 ",
         isScrolled
-          ? "bg-white/10 dark:bg-slate-900/10 backdrop-blur-[5px] shadow-lg"
+          ? "bg-white/10 dark:bg-slate-900/10 backdrop-blur-[5px] shadow-lg border-b border-white/10"
           : "bg-transparent backdrop-blur-[5px]",
       )}
     >
-      <div className="container mx-auto px-6 h-20 flex justify-between items-center">
+      <div className="mx-auto px-6 h-20 flex justify-between items-center pt-3 pb-3 pl-10 pr-10">
         {/* Left: Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <span className="font-serif text-2xl font-bold tracking-tight text-foreground group-hover:scale-105 transition-transform">
+          <span
+            className="font-serif text-2xl font-bold tracking-tight text-foreground group-hover:scale-105 
+          group-hover:text-primary-light transition-transform "
+          >
             Ambar.
           </span>
         </Link>
@@ -66,9 +69,9 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <Link
             href="/contact"
-            className="hidden md:flex items-center gap-2 px-6 py-2.5 bg-foreground text-background rounded-full text-sm font-bold hover:opacity-90 transition-all hover:scale-105 group"
+            className="hidden md:flex items-center gap-2 px-6 py-2.5 bg-transparent border border-primary text-primary rounded-full text-sm font-bold hover:opacity-90 transition-all hover:scale-105 group"
           >
-            Let&apos;s Collab
+            Let&apos;s Meet
             <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </Link>
 
@@ -93,7 +96,7 @@ export default function Navbar() {
             className="fixed inset-0 z-[60] bg-background dark:bg-surface flex flex-col pt-20 px-6 h-screen"
           >
             <button
-              className="absolute top-6 right-6 p-2 text-slate-800 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-indigo-400"
+              className="absolute top-6 right-6 p-2 text-slate-800 dark:text-slate-200 hover:text-primary dark:hover:text-primary-light"
               onClick={() => setMobileMenuOpen(false)}
             >
               <X className="w-6 h-6" />
@@ -105,9 +108,9 @@ export default function Navbar() {
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className={clsx(
-                    "text-2xl font-serif font-bold transition-colors hover:text-indigo-600 dark:hover:text-indigo-400",
+                    "text-2xl font-serif font-bold transition-colors hover:text-primary dark:hover:text-primary-light",
                     pathname === link.href
-                      ? "text-indigo-700 dark:text-indigo-300"
+                      ? "text-primary dark:text-primary-light"
                       : "text-slate-800 dark:text-slate-200",
                   )}
                 >
@@ -118,9 +121,9 @@ export default function Navbar() {
                 href="/contact"
                 onClick={() => setMobileMenuOpen(false)}
                 className={clsx(
-                  "text-2xl font-serif font-bold transition-colors hover:text-indigo-600 dark:hover:text-indigo-400",
+                  "text-2xl font-serif font-bold transition-colors hover:text-primary dark:hover:text-primary-light",
                   pathname === "/contact"
-                    ? "text-indigo-700 dark:text-indigo-300"
+                    ? "text-primary dark:text-primary-light"
                     : "text-slate-800 dark:text-slate-200",
                 )}
               >
