@@ -45,16 +45,16 @@ export default function Navbar() {
         </Link>
 
         {/* Center: Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-12 absolute left-1/2 -translate-x-1/2">
+        <nav className="hidden md:flex items-center gap-1 bg-black/90 dark:bg-black/80 backdrop-blur-md px-1.5 py-1.5 rounded-full border border-white/10 absolute left-1/2 -translate-x-1/2">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
               className={clsx(
-                "text-sm font-medium tracking-wide transition-all duration-200 hover:text-primary dark:hover:text-primary-light uppercase",
+                "text-[13px] font-medium tracking-wide transition-all duration-200 uppercase px-4 py-2 rounded-full",
                 pathname === link.href
-                  ? "text-primary dark:text-primary-light"
-                  : "text-slate-600 dark:text-slate-400",
+                  ? "bg-white/20 text-white"
+                  : "text-white/70 hover:text-white hover:bg-white/10",
               )}
             >
               {link.name}
