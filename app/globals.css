@@ -1,36 +1,34 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #5C4033; /* Earthy Brown */
-  --color-primary-light: #7A5C4A;
-  --color-secondary: #D2B48C; /* Muted Beige */
-  --color-secondary-light: #E3CDBA;
-  --color-background: #FAFAFA; /* Warm Off-White */
+  --color-primary: #4F46E5; /* Vibrant Indigo */
+  --color-primary-light: #6366F1;
+  --color-secondary: #0EA5E9; /* Bright Sky Blue */
+  --color-secondary-light: #38BDF8;
+  --color-background: #F8FAFC; /* Clean, light background */
   --color-surface: #FFFFFF;
-  --color-foreground: #333333; /* Dark Slate */
-  --color-muted: #737373;
+  --color-foreground: #0F172A; /* Slate 900 for high contrast */
+  --color-muted: #64748B; /* Slate 500 */
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
 }
 
 :root {
-  --background: #FAFAFA;
-  --foreground: #333333;
+  --background: #F8FAFC;
+  --foreground: #0F172A;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #FAFAFA; /* Keeping it light/warm even in dark mode initially to ensure the brand feel, or we can make a dark wooden theme */
-    /* Let's actually provide a stunning dark mode */
-    --background: #1A1210; /* Dark brownish black */
-    --foreground: #E0D3C1;
+    --background: #020617; /* Very Dark Slate */
+    --foreground: #F8FAFC;
   }
   @theme inline {
-     --color-background: #1A1210;
-     --color-surface: #261B18;
-     --color-foreground: #E0D3C1;
-     --color-muted: #A3968B;
+     --color-background: #020617;
+     --color-surface: #0F172A;
+     --color-foreground: #F8FAFC;
+     --color-muted: #94A3B8;
   }
 }
 
