@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full">
       {/* Hero Section */}
-      <section className="relative h-[95vh] min-h-[700px] flex items-center justify-center overflow-hidden bg-black">
+      <section className="relative h-[95vh] min-h-[700px] flex items-center justify-center overflow-hidden bg-background">
         {/* Background Gradient */}
         <div className="absolute inset-0 z-0">
           <div
@@ -39,7 +39,7 @@ export default function Home() {
           <div className="absolute bottom-0 left-0 right-0 h-px bg-primary/20 backdrop-blur-sm" />
 
           {/* Decorative Background Text */}
-          <div className="absolute -bottom-10 left-0 right-0 flex justify-center px-4 opacity-[0.03] select-none pointer-events-none">
+          <div className="hidden md:absolute md:flex -bottom-10 left-0 right-0 justify-center px-4 opacity-[0.03] select-none pointer-events-none">
             <span className="text-[15vw] font-black tracking-tighter text-white whitespace-nowrap leading-none">
               AMBAR
             </span>
@@ -94,7 +94,7 @@ export default function Home() {
               className="inline-flex items-center gap-3 bg-primary hover:bg-primary-light text-black px-10 py-5 rounded-full font-bold text-lg shadow-xl shadow-primary/20 transition-all hover:scale-105 active:scale-95"
             >
               EXPLORE Products
-              <div className="bg-black/10 p-1 rounded-full">
+              <div className="bg-background/10 p-1 rounded-full">
                 <ArrowRight className="w-5 h-5" />
               </div>
             </Link>
@@ -103,8 +103,8 @@ export default function Home() {
       </section>
 
       {/* Intro Section */}
-      <section className="py-24 bg-surface text-foreground">
-        <div className="container mx-auto px-6 md:px-12 text-center max-w-4xl border-x border-muted/10 p-8 md:p-16 rounded-3xl bg-background/50">
+      <section className="py-24 bg-background text-foreground">
+        <div className="container mx-auto px-6 md:px-12 text-center max-w-4xl border-x border-muted/10 p-8 md:p-16 rounded-3xl bg-card-bg">
           <div className="inline-block text-primary font-bold tracking-widest text-sm uppercase mb-4">
             Welcome to Ambar
           </div>
@@ -127,7 +127,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
             <div className="max-w-2xl">
               <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4 text-foreground">
-                Featured Collections
+                Featured Products
               </h2>
               <p className="text-muted text-lg">
                 Discover our handpicked selections designed to bring comfort and
@@ -152,9 +152,9 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-surface dark:bg-[#1A1210] border-y border-muted/10">
+      <section className="py-24 bg-background dark:bg-[#1A1210] border-y border-muted/10">
         <div className="container mx-auto px-6 md:px-12 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-16">
+          <h2 className="font-serif text-white text-3xl md:text-4xl font-bold mb-16">
             What Our Customers Say
           </h2>
 
@@ -181,18 +181,18 @@ export default function Home() {
             ].map((testimonial, i) => (
               <div
                 key={i}
-                className="bg-gradient-to-br from-emerald-50/50 to-white dark:from-stone-900 dark:to-stone-950 border border-primary/10 dark:border-primary/20 shadow-md p-8 rounded-2xl flex flex-col items-center text-center transition-transform hover:-translate-y-1"
+                className="bg-card-dark-bg  dark:from-stone-900 dark:to-stone-950 dark:border-primary/20 shadow-md p-8 rounded-2xl flex flex-col items-center text-center transition-transform hover:-translate-y-1"
               >
                 <div className="flex text-amber-500 mb-6 gap-1">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-current" />
                   ))}
                 </div>
-                <p className="text-slate-700 dark:text-slate-300 font-medium italic mb-8 grow">
+                <p className="text-white/80 dark:text-neutral-300 font-medium italic mb-8 grow">
                   "{testimonial.content}"
                 </p>
                 <div>
-                  <h4 className="font-bold text-slate-900 dark:text-white text-lg">
+                  <h4 className="font-bold text-white dark:text-white text-lg">
                     {testimonial.name}
                   </h4>
                   <p className="text-sm font-semibold text-primary dark:text-primary-light mt-1">

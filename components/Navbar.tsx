@@ -30,10 +30,10 @@ export default function Navbar() {
   return (
     <header
       className={clsx(
-        "fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 ",
+        "fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 backdrop-blur-sm",
         isScrolled
-          ? "bg-white/10 dark:bg-slate-900/10 backdrop-blur-[5px] shadow-lg border-b border-white/10"
-          : "bg-transparent backdrop-blur-[5px]",
+          ? "bg-white/10 dark:bg-background/5 shadow-lg border-b border-white/10"
+          : "bg-transparent ",
       )}
     >
       <div className="mx-auto px-6 h-20 flex justify-between items-center pt-3 pb-3 pl-10 pr-10">
@@ -48,7 +48,7 @@ export default function Navbar() {
         </Link>
 
         {/* Center: Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-1 bg-black/90 dark:bg-black/80 backdrop-blur-md px-1.5 py-1.5 rounded-full border border-white/10 absolute left-1/2 -translate-x-1/2">
+        <nav className="hidden md:flex items-center gap-1 bg-background/90 dark:bg-background/80 backdrop-blur-md px-1.5 py-1.5 rounded-full border border-white/10 absolute left-1/2 -translate-x-1/2">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -56,7 +56,7 @@ export default function Navbar() {
               className={clsx(
                 "text-[13px] font-medium tracking-wide transition-all duration-200 uppercase px-4 py-2 rounded-full",
                 pathname === link.href
-                  ? "bg-white/20 text-white"
+                  ? "bg-white/20 text-primary"
                   : "text-white/70 hover:text-white hover:bg-white/10",
               )}
             >
@@ -93,10 +93,10 @@ export default function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "spring", bounce: 0, duration: 0.4 }}
-            className="fixed inset-0 z-[60] bg-background dark:bg-surface flex flex-col pt-20 px-6 h-screen"
+            className="fixed inset-0 z-[60] bg-background dark:bg-background flex flex-col pt-20 px-6 h-screen"
           >
             <button
-              className="absolute top-6 right-6 p-2 text-slate-800 dark:text-slate-200 hover:text-primary dark:hover:text-primary-light"
+              className="absolute top-6 right-6 p-2 text-neutral-800 dark:text-neutral-200 hover:text-primary dark:hover:text-primary-light"
               onClick={() => setMobileMenuOpen(false)}
             >
               <X className="w-6 h-6" />
@@ -111,7 +111,7 @@ export default function Navbar() {
                     "text-2xl font-serif font-bold transition-colors hover:text-primary dark:hover:text-primary-light",
                     pathname === link.href
                       ? "text-primary dark:text-primary-light"
-                      : "text-slate-800 dark:text-slate-200",
+                      : "text-white md:text-neutral-800 dark:text-neutral-200",
                   )}
                 >
                   {link.name}
@@ -124,7 +124,7 @@ export default function Navbar() {
                   "text-2xl font-serif font-bold transition-colors hover:text-primary dark:hover:text-primary-light",
                   pathname === "/contact"
                     ? "text-primary dark:text-primary-light"
-                    : "text-slate-800 dark:text-slate-200",
+                    : "text-neutral-800 dark:text-neutral-200",
                 )}
               >
                 Let&apos;s Collab

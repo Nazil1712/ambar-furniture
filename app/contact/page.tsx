@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, MessageCircle } from 'lucide-react';
+import { Mail, MapPin, Phone, MessageCircle } from "lucide-react";
 
 export default function ContactPage() {
   return (
@@ -9,16 +9,18 @@ export default function ContactPage() {
             Get in Touch
           </h1>
           <p className="text-muted text-lg">
-            Whether you have a question about our products, need a custom order, or just want to say hello, we're here to help.
+            Whether you have a question about our products, need a custom order,
+            or just want to say hello, we're here to help.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-20">
-          
           {/* Contact Details */}
           <div className="lg:col-span-2 space-y-12">
             <div>
-              <h2 className="font-serif text-3xl font-bold mb-8">Contact Information</h2>
+              <h2 className="font-serif text-3xl font-bold mb-8">
+                Contact Information
+              </h2>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-primary/10 rounded-xl text-primary">
@@ -26,10 +28,16 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-bold mb-1">Our Showroom</h4>
-                    <p className="text-muted">123 Furniture Street,<br/>Craftsmanship District,<br/>City, Country</p>
+                    <p className="text-muted">
+                      123 Furniture Street,
+                      <br />
+                      Craftsmanship District,
+                      <br />
+                      City, Country
+                    </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-primary/10 rounded-xl text-primary">
                     <Phone className="w-6 h-6" />
@@ -53,10 +61,12 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <h2 className="font-serif text-3xl font-bold mb-8">Quick Connect</h2>
-              <a 
-                href="https://wa.me/1234567890" 
-                target="_blank" 
+              <h2 className="font-serif text-3xl font-bold mb-8">
+                Quick Connect
+              </h2>
+              <a
+                href="https://wa.me/1234567890"
+                target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-semibold transition-all w-full justify-center"
               >
@@ -67,71 +77,91 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Form */}
-          <div className="lg:col-span-3 bg-surface p-8 md:p-12 rounded-3xl shadow-lg border border-muted/10">
-            <h2 className="font-serif text-3xl font-bold mb-8">Send Us a Message</h2>
+          <div className="lg:col-span-3 bg-background p-8 md:p-12 rounded-3xl shadow-lg border border-white/10 text-white">
+            <h2 className="font-serif text-3xl font-bold mb-8 text-white">
+              Send Us a Message
+            </h2>
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label htmlFor="name" className="font-medium text-sm">Full Name</label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    className="w-full px-4 py-3 rounded-xl border border-muted/20 bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                  <label
+                    htmlFor="name"
+                    className="font-medium text-sm text-neutral-300"
+                  >
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="w-full px-4 py-3 rounded-xl border border-white/20 bg-background/50 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                     placeholder="John Doe"
                   />
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="email" className="font-medium text-sm">Email Address</label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    className="w-full px-4 py-3 rounded-xl border border-muted/20 bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                  <label
+                    htmlFor="email"
+                    className="font-medium text-sm text-neutral-300"
+                  >
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    className="w-full px-4 py-3 rounded-xl border border-white/20 bg-background/50 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                     placeholder="john@example.com"
                   />
                 </div>
               </div>
               <div className="space-y-2">
-                <label htmlFor="subject" className="font-medium text-sm">Subject</label>
-                <input 
-                  type="text" 
-                  id="subject" 
-                  className="w-full px-4 py-3 rounded-xl border border-muted/20 bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                <label
+                  htmlFor="subject"
+                  className="font-medium text-sm text-neutral-300"
+                >
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  className="w-full px-4 py-3 rounded-xl border border-white/20 bg-background/50 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                   placeholder="Inquiry about..."
                 />
               </div>
               <div className="space-y-2">
-                <label htmlFor="message" className="font-medium text-sm">Message</label>
-                <textarea 
-                  id="message" 
+                <label
+                  htmlFor="message"
+                  className="font-medium text-sm text-neutral-300"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="message"
                   rows={5}
-                  className="w-full px-4 py-3 rounded-xl border border-muted/20 bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-xl border border-white/20 bg-background/50 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
                   placeholder="How can we help you?"
                 ></textarea>
               </div>
-              <button 
+              <button
                 type="button"
-                className="w-full bg-primary hover:bg-primary-light text-white px-8 py-4 rounded-xl font-semibold transition-all"
+                className="w-full bg-primary hover:bg-primary-light text-black px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-primary/20"
               >
                 Send Message
               </button>
             </form>
           </div>
-          
         </div>
 
         {/* Google Maps Embed */}
         <div className="mt-20 rounded-3xl overflow-hidden h-[400px] border border-muted/20">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116315.63229606899!2d-88.08182902621021!3d43.20456184511598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88051a81e9196b01%3A0xb353ac07abdcffe!2sFurniture%20Row!5e0!3m2!1sen!2sus!4v1714522336688!5m2!1sen!2sus" 
-            width="100%" 
-            height="100%" 
-            style={{ border: 0 }} 
-            allowFullScreen={false} 
-            loading="lazy" 
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116315.63229606899!2d-88.08182902621021!3d43.20456184511598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88051a81e9196b01%3A0xb353ac07abdcffe!2sFurniture%20Row!5e0!3m2!1sen!2sus!4v1714522336688!5m2!1sen!2sus"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen={false}
+            loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-
       </div>
     </div>
   );

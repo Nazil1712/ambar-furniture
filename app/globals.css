@@ -1,34 +1,36 @@
 @import "tailwindcss";
 
-@theme inline {
+@theme {
   --color-primary: #03fcad; /* Vibrant Green */
   --color-primary-light: #4dfccd;
-  --color-secondary: #00d28d; /* Complementary Darker Green */
+  --color-secondary: #00d28d;
   --color-secondary-light: #33ffc3;
-  --color-background: #F8FAFC; /* Clean, light background */
-  --color-surface: #FFFFFF;
-  --color-foreground: #0F172A; /* Slate 900 for high contrast */
-  --color-muted: #64748B; /* Slate 500 */
+  --color-background: #ffffff; /* Pure White */
+  --color-surface: #000000; /* Pure Black as requested */
+  --color-foreground: #171717; /* Neutral 900 */
+  --color-muted: #737373; /* Neutral 500 */
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
 }
 
 :root {
-  --background: #F8FAFC;
-  --foreground: #0F172A;
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #020617; /* Very Dark Slate */
-    --foreground: #F8FAFC;
+    --background: #000000;
+    --foreground: #ffffff;
   }
   @theme inline {
-     --color-background: #020617;
-     --color-surface: #0F172A;
-     --color-foreground: #F8FAFC;
-     --color-muted: #94A3B8;
+    --color-background: #1c1c1c;
+    --color-card-bg: #2c2c2c;
+    --color-card-dark-bg: #111111;
+    --color-surface: #121212; /* Slightly dark gray for layering in dark mode */
+    --color-foreground: #ffffff;
+    --color-muted: #a3a3a3;
   }
 }
 
@@ -39,7 +41,12 @@ body {
 }
 
 /* Base heading font */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-serif);
 }
 
