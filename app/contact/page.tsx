@@ -1,0 +1,138 @@
+import { Mail, MapPin, Phone, MessageCircle } from 'lucide-react';
+
+export default function ContactPage() {
+  return (
+    <div className="min-h-screen bg-background pt-24 pb-16">
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-foreground">
+            Get in Touch
+          </h1>
+          <p className="text-muted text-lg">
+            Whether you have a question about our products, need a custom order, or just want to say hello, we're here to help.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-20">
+          
+          {/* Contact Details */}
+          <div className="lg:col-span-2 space-y-12">
+            <div>
+              <h2 className="font-serif text-3xl font-bold mb-8">Contact Information</h2>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-primary/10 rounded-xl text-primary">
+                    <MapPin className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold mb-1">Our Showroom</h4>
+                    <p className="text-muted">123 Furniture Street,<br/>Craftsmanship District,<br/>City, Country</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-primary/10 rounded-xl text-primary">
+                    <Phone className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold mb-1">Phone</h4>
+                    <p className="text-muted">+1 (555) 123-4567</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-primary/10 rounded-xl text-primary">
+                    <Mail className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold mb-1">Email</h4>
+                    <p className="text-muted">hello@ambarfurniture.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h2 className="font-serif text-3xl font-bold mb-8">Quick Connect</h2>
+              <a 
+                href="https://wa.me/1234567890" 
+                target="_blank" 
+                rel="noreferrer"
+                className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-semibold transition-all w-full justify-center"
+              >
+                <MessageCircle className="w-6 h-6" />
+                Chat on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          {/* Contact Form */}
+          <div className="lg:col-span-3 bg-surface p-8 md:p-12 rounded-3xl shadow-lg border border-muted/10">
+            <h2 className="font-serif text-3xl font-bold mb-8">Send Us a Message</h2>
+            <form className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <label htmlFor="name" className="font-medium text-sm">Full Name</label>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    className="w-full px-4 py-3 rounded-xl border border-muted/20 bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                    placeholder="John Doe"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <label htmlFor="email" className="font-medium text-sm">Email Address</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    className="w-full px-4 py-3 rounded-xl border border-muted/20 bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                    placeholder="john@example.com"
+                  />
+                </div>
+              </div>
+              <div className="space-y-2">
+                <label htmlFor="subject" className="font-medium text-sm">Subject</label>
+                <input 
+                  type="text" 
+                  id="subject" 
+                  className="w-full px-4 py-3 rounded-xl border border-muted/20 bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                  placeholder="Inquiry about..."
+                />
+              </div>
+              <div className="space-y-2">
+                <label htmlFor="message" className="font-medium text-sm">Message</label>
+                <textarea 
+                  id="message" 
+                  rows={5}
+                  className="w-full px-4 py-3 rounded-xl border border-muted/20 bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
+                  placeholder="How can we help you?"
+                ></textarea>
+              </div>
+              <button 
+                type="button"
+                className="w-full bg-primary hover:bg-primary-light text-white px-8 py-4 rounded-xl font-semibold transition-all"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+          
+        </div>
+
+        {/* Google Maps Embed */}
+        <div className="mt-20 rounded-3xl overflow-hidden h-[400px] border border-muted/20">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116315.63229606899!2d-88.08182902621021!3d43.20456184511598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88051a81e9196b01%3A0xb353ac07abdcffe!2sFurniture%20Row!5e0!3m2!1sen!2sus!4v1714522336688!5m2!1sen!2sus" 
+            width="100%" 
+            height="100%" 
+            style={{ border: 0 }} 
+            allowFullScreen={false} 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+      </div>
+    </div>
+  );
+}

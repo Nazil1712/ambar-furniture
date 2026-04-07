@@ -1,26 +1,56 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme inline {
+  --color-primary: #5C4033; /* Earthy Brown */
+  --color-primary-light: #7A5C4A;
+  --color-secondary: #D2B48C; /* Muted Beige */
+  --color-secondary-light: #E3CDBA;
+  --color-background: #FAFAFA; /* Warm Off-White */
+  --color-surface: #FFFFFF;
+  --color-foreground: #333333; /* Dark Slate */
+  --color-muted: #737373;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root {
+  --background: #FAFAFA;
+  --foreground: #333333;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #FAFAFA; /* Keeping it light/warm even in dark mode initially to ensure the brand feel, or we can make a dark wooden theme */
+    /* Let's actually provide a stunning dark mode */
+    --background: #1A1210; /* Dark brownish black */
+    --foreground: #E0D3C1;
+  }
+  @theme inline {
+     --color-background: #1A1210;
+     --color-surface: #261B18;
+     --color-foreground: #E0D3C1;
+     --color-muted: #A3968B;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+/* Base heading font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+/* Reusable util classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .glass {
+    @apply bg-white/70 dark:bg-black/70 backdrop-blur-md border border-white/20 dark:border-white/10;
+  }
 }
