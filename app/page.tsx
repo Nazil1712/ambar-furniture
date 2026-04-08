@@ -25,7 +25,7 @@ export default function Home() {
 
   const testimonials = [
               {
-                name: "Chudgar Amaan",
+                name: "Patel Imtiyaz",
                 role: "Interior Designer",
                 content:
                   "The Sultan Sofa exceeded all my expectations. The craftsmanship is pristine and it instantly became the centerpiece of my client's living room.",
@@ -115,7 +115,7 @@ export default function Home() {
               href="/products"
               className="inline-flex items-center gap-3 bg-primary hover:bg-primary-light text-black px-5 py-3 md:px-10 md:py-5 rounded-full font-bold text-sm shadow-xl shadow-primary/20 transition-all hover:scale-105 active:scale-95"
             >
-              EXPLORE Products
+              Explore Products
               <div className="bg-background/10 p-1 rounded-full">
                 <ArrowRight className="w-5 h-5" />
               </div>

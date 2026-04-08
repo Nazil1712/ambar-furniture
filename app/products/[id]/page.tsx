@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Check, MessageCircle } from "lucide-react";
 import { notFound } from "next/navigation";
+import ProductCard from "@/components/ProductCard";
 
 export async function generateStaticParams() {
   return mockProducts.map((product) => ({
@@ -26,13 +27,14 @@ export default async function ProductDetails({
   const whatsappNumber = "+91 8469026605";
   const whatsappMessage = `Hi, I'm interested in the ${product.name} from Ambar Furniture.`;
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+  const otherProducts = mockProducts.filter((p) => p.id !== id).slice(0, 4);
 
   return (
     <div className="min-h-screen bg-background pt-24 pb-16">
       <div className="container mx-auto px-6 md:px-12">
         <Link
           href="/products"
-          className="inline-flex items-center gap-2 text-muted hover:text-primary transition-colors mb-8"
+          className="inline-flex text-sm md:text-base items-center gap-2 text-muted hover:text-primary transition-colors mb-8"
         >
           <ArrowLeft className="w-5 h-5" />
           Back to Products
@@ -40,7 +42,7 @@ export default async function ProductDetails({
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Product Image */}
-          <div className="relative aspect-square lg:aspect-[4/5] rounded-3xl overflow-hidden bg-neutral-900 shadow-lg">
+          <div className="relative aspect-square lg:aspect-4/5 rounded-3xl overflow-hidden bg-neutral-900 shadow-lg">
             <Image
               src={product.image}
               alt={product.name}
@@ -57,17 +59,17 @@ export default async function ProductDetails({
               {product.category}
             </div>
 
-            <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-foreground">
+            <h1 className="font-serif text-3xl md:text-5xl font-bold mb-6 text-foreground">
               {product.name}
             </h1>
 
             {product.price && (
-              <div className="text-3xl font-semibold mb-8 text-primary">
-                ${product.price}
+              <div className="text-2xl font-semibold mb-8 text-primary">
+                ₹ {product.price}
               </div>
             )}
 
-            <p className="text-muted text-lg leading-relaxed mb-10">
+            <p className="text-muted text-base md:text-lg leading-relaxed mb-10">
               {product.description}
             </p>
 
@@ -77,9 +79,9 @@ export default async function ProductDetails({
               </h3>
               <ul className="space-y-4">
                 {product.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-4">
+                  <li key={idx} className="flex items-center text-sm gap-4">
                     <div className="p-1 rounded-full bg-primary/10 text-primary mt-1">
-                      <Check className="w-4 h-4" />
+                      <Check className="w-3 h-3 md:w-4 md:h-4" />
                     </div>
                     <span className="text-foreground/80">{feature}</span>
                   </li>
@@ -104,6 +106,27 @@ export default async function ProductDetails({
                 Contact via Form
               </Link>
             </div>
+          </div>
+        </div>
+
+        {/* Other Products Section */}
+        <div className="mt-24 pt-16 border-t border-white/10">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
+            <div>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+                View related products
+              </h2>
+              <p className="text-muted text-sm md:text-base max-w-xl">
+                Discover more premium handcrafted pieces from our collection that
+                perfectly complement your home.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
+            {otherProducts.map((otherProduct) => (
+              <ProductCard key={otherProduct.id} product={otherProduct} />
+            ))}
           </div>
         </div>
       </div>

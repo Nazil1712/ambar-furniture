@@ -47,7 +47,7 @@ export default function ProductsPage() {
         <aside className="w-full md:w-64 shrink-0">
           <div className="sticky top-32 space-y-8">
             {/* Search */}
-            <div className="mb-8 md:mb-0">
+            <div className="mb-8">
               <h3 className="font-bold text-lg mb-4 text-foreground font-serif hidden md:block">
                 Search
               </h3>
@@ -141,21 +141,25 @@ export default function ProductsPage() {
               ))}
             </div>
           ) : (
-            <div className="text-center py-20 bg-background rounded-2xl border border-white/10 text-white">
-              <h3 className="text-2xl font-serif font-bold mb-2">
+            <div className="text-center py-20 px-6 bg-neutral-900/50 rounded-3xl border border-white/5 text-white backdrop-blur-sm">
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/5 mb-6">
+                <Search className="w-10 h-10 text-primary" />
+              </div>
+              <h3 className="text-2xl md:text-3xl font-serif font-bold mb-4">
                 No products found
               </h3>
-              <p className="text-neutral-400">
-                Try adjusting your search or category filters.
+              <p className="text-neutral-400 max-w-md mx-auto mb-8 text-sm md:text-base">
+                We couldn't find any products matching your search or category filters. 
+                Try exploring our other categories or adjusting your keywords.
               </p>
               <button
                 onClick={() => {
                   setSearchQuery("");
                   setSelectedCategory(null);
                 }}
-                className="mt-6 px-6 py-2 bg-primary text-black rounded-full font-medium hover:bg-primary-light transition-colors"
+                className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-black rounded-full font-bold hover:bg-primary-light transition-all active:scale-95 shadow-lg shadow-primary/20"
               >
-                Clear Filters
+                Clear All Filters
               </button>
             </div>
           )}

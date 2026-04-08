@@ -76,7 +76,7 @@ export default function AboutPage() {
                 Master Craftsmanship
               </h3>
               <p className="text-muted text-sm md:text-base leading-relaxed">
-                We combine traditional woodworking techniques with modern
+                We combine traditional techniques with modern
                 precision to create pieces that are structurally sound and
                 visually stunning.
               </p>

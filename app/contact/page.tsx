@@ -77,7 +77,7 @@ export default function ContactPage() {
                 Quick Connect
               </h2>
               <a
-                href="https://wa.me/9998180032"
+                href="https://wa.me/+91 9998180032?text=Hey, Can we Connect?"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex text-sm md:text-base items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-semibold transition-all w-full justify-center"
@@ -154,7 +154,7 @@ export default function ContactPage() {
               </div>
               <button
                 type="button"
-                className="w-full bg-primary hover:bg-primary-light text-black px-8 py-3 md:py-4 rounded-xl font-bold transition-all shadow-lg shadow-primary/20"
+                className="w-full bg-primary hover:bg-primary-light text-black px-8 py-3 md:py-4 rounded-xl font-bold transition-all shadow-lg shadow-primary/20 cursor-pointer"
               >
                 Send Message
               </button>
