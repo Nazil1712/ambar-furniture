@@ -24,25 +24,55 @@ export default function Home() {
   ];
 
   const testimonials = [
-              {
-                name: "Patel Imtiyaz",
-                role: "Interior Designer",
-                content:
-                  "The Sultan Sofa exceeded all my expectations. The craftsmanship is pristine and it instantly became the centerpiece of my client's living room.",
-              },
-              {
-                name: "Lokhandwala Nadeem",
-                role: "Homeowner",
-                content:
-                  "We installed the Ambar Kitchen Cupboards last month. The soft-close features and minimalist design completely transformed our kitchen.",
-              },
-              {
-                name: "Mansuri Sameer",
-                role: "Architect",
-                content:
-                  "When I need high-quality, reliable wood furniture for a project, Ambar is my first stop. Their attention to detail on the Oak Dining Table is remarkable.",
-              },
-            ]
+    {
+      name: "Patel Imtiyaz",
+      role: "Interior Designer",
+      content:
+        "The Sultan Sofa exceeded all my expectations. The craftsmanship is pristine and it instantly became the centerpiece of my client's living room.",
+    },
+    {
+      name: "Lokhandwala Nadeem",
+      role: "Homeowner",
+      content:
+        "We installed the Ambar Kitchen Cupboards last month. The soft-close features and minimalist design completely transformed our kitchen.",
+    },
+    {
+      name: "Mansuri Sameer",
+      role: "Architect",
+      content:
+        "When I need high-quality, reliable wood furniture for a project, Ambar is my first stop. Their attention to detail on the Oak Dining Table is remarkable.",
+    },
+    {
+      name: "Fatema Chiniwala",
+      role: "Lifestyle Blogger",
+      content:
+        "Ambar's wall framing adds such a premium touch to my studio. The finish is impeccable and the materials feel incredibly high-end.",
+    },
+    {
+      name: "Zuber Ahmed",
+      role: "Business Owner",
+      content:
+        "Great service and even better quality. The office desk they built for me is both functional and stylish. Highly recommend their work!",
+    },
+    {
+      name: "Shreya Shah",
+      role: "Graphic Designer",
+      content:
+        "I love the minimalist aesthetic Ambar brings to their furniture. It's rare to find such clean lines combined with such durable construction.",
+    },
+    {
+      name: "Irfan Khan",
+      role: "Civil Engineer",
+      content:
+        "The structural integrity of their folding beds is top-notch. It's a lifesaver for space management in modern apartments.",
+    },
+    {
+      name: "Ria Mehta",
+      role: "Marketing Manager",
+      content:
+        "Customer support was amazing from start to finish. They helped me customize my dining set and it turned out exactly how I imagined.",
+    },
+  ];
 
   return (
     <div className="flex flex-col w-full">
@@ -193,35 +223,50 @@ export default function Home() {
 
       {/* Testimonials */}
       <section className="py-24 bg-background dark:bg-[#1A1210] border-y border-muted/10">
-        <div className="container mx-auto px-6 md:px-12 text-center">
+        <div className="container mx-auto px-0 md:px-12 text-center">
           <h2 className="font-serif text-white text-3xl md:text-4xl font-bold mb-16">
             What Our <br className="md:hidden"/> Customers Say
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {testimonials.map((testimonial, i) => (
-              <div
-                key={i}
-                className="bg-card-dark-bg border border-colour-border  dark:from-stone-900 dark:to-stone-950 dark:border-primary/20 shadow-md p-8 rounded-2xl flex flex-col items-center text-center transition-transform hover:-translate-y-1"
-              >
-                <div className="flex text-amber-500 mb-6 gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-current" />
-                  ))}
-                </div>
-                <p className="text-white/80 dark:text-neutral-300 font-medium italic mb-8 grow">
-                  &ldquo; {testimonial.content} &rdquo;
-                </p>
-                <div>
-                  <h4 className="font-bold text-white dark:text-white text-lg">
-                    {testimonial.name}
-                  </h4>
-                  <p className="text-sm font-semibold text-primary dark:text-primary-light mt-1">
-                    {testimonial.role}
+          <div 
+            className="relative overflow-hidden w-full py-6 md:py-10 md:[mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]"
+          >
+            <motion.div
+              className="flex gap-4 md:gap-8 w-max px-6 md:px-0"
+              animate={{ x: [0, "-50%"] }}
+              transition={{
+                x: {
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  duration: 40,
+                  ease: "linear",
+                },
+              }}
+            >
+              {[...testimonials, ...testimonials].map((testimonial, i) => (
+                <div
+                  key={i}
+                  className="w-[260px] md:w-[400px] shrink-0 bg-card-dark-bg border border-colour-border shadow-md p-6 md:p-8 rounded-2xl flex flex-col items-center text-center transition-transform hover:scale-[1.02]"
+                >
+                  <div className="flex text-amber-500 mb-4 md:mb-6 gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 md:w-5 md:h-5 fill-current" />
+                    ))}
+                  </div>
+                  <p className="text-white/80 text-sm md:text-base font-medium italic mb-6 md:mb-8 grow">
+                    &ldquo; {testimonial.content} &rdquo;
                   </p>
+                  <div>
+                    <h4 className="font-bold text-white text-base md:text-lg">
+                      {testimonial.name}
+                    </h4>
+                    <p className="text-[10px] md:text-sm font-semibold text-primary mt-1">
+                      {testimonial.role}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </motion.div>
           </div>
         </div>
       </section>

@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function ProductCard({ product }: { product: Product }) {
   return (
     <motion.div
-      whileHover={{ y: -8 }}
+      whileHover={{ scale: 1.03 }}
       transition={{ duration: 0.3 }}
       className="group bg-card-bg dark:bg-neutral-900 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-white/10 hover:border-primary/50 transition-all duration-300 text-white"
     >
