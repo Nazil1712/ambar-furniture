@@ -18,15 +18,36 @@ export default function Home() {
   const featuredProducts = featuredProductsArr;
   const heroWords = [
     "Sultan",
-    "Folding Bed",
+    "Folding Beds",
     "Wall Frames",
     "Kitchen Cabinets",
   ];
 
+  const testimonials = [
+              {
+                name: "Chudgar Amaan",
+                role: "Interior Designer",
+                content:
+                  "The Sultan Sofa exceeded all my expectations. The craftsmanship is pristine and it instantly became the centerpiece of my client's living room.",
+              },
+              {
+                name: "Lokhandwala Nadeem",
+                role: "Homeowner",
+                content:
+                  "We installed the Ambar Kitchen Cupboards last month. The soft-close features and minimalist design completely transformed our kitchen.",
+              },
+              {
+                name: "Mansuri Sameer",
+                role: "Architect",
+                content:
+                  "When I need high-quality, reliable wood furniture for a project, Ambar is my first stop. Their attention to detail on the Oak Dining Table is remarkable.",
+              },
+            ]
+
   return (
     <div className="flex flex-col w-full">
       {/* Hero Section */}
-      <section className="relative h-[95vh] min-h-[700px] flex items-center justify-center overflow-hidden bg-background">
+      <section className="relative h-[80vh] md:h-[95vh] flex items-center justify-center overflow-hidden bg-background">
         {/* Background Gradient */}
         <div className="absolute inset-0 z-0">
           <div
@@ -81,17 +102,18 @@ export default function Home() {
 
         <div className="container relative z-20 mx-auto px-6 md:px-12 text-center text-white">
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8 animate-in slide-in-from-bottom duration-1000 fade-in">
-            We Manufacture <br className="md:hidden" />
+            We <br className="md:hidden" /> Manufacture{" "}
+            <br className="md:hidden" />
             <Typewriter words={heroWords} />
           </h1>
-          <p className="text-lg md:text-2xl max-w-3xl mx-auto mb-12 text-white/80 leading-relaxed animate-in slide-in-from-bottom duration-1000 delay-200 fade-in fill-mode-both">
+          <p className="text-sm md:text-2xl max-w-3xl mx-auto mb-12 text-white/80 leading-relaxed animate-in slide-in-from-bottom duration-1000 delay-200 fade-in fill-mode-both">
             We believe in combining innovative design, sustainable practices,
             and exceptional craftsmanship to bring your vision to life.
           </p>
           <div className="animate-in slide-in-from-bottom duration-1000 delay-400 fade-in fill-mode-both">
             <Link
               href="/products"
-              className="inline-flex items-center gap-3 bg-primary hover:bg-primary-light text-black px-10 py-5 rounded-full font-bold text-lg shadow-xl shadow-primary/20 transition-all hover:scale-105 active:scale-95"
+              className="inline-flex items-center gap-3 bg-primary hover:bg-primary-light text-black px-5 py-3 md:px-10 md:py-5 rounded-full font-bold text-sm shadow-xl shadow-primary/20 transition-all hover:scale-105 active:scale-95"
             >
               EXPLORE Products
               <div className="bg-background/10 p-1 rounded-full">
@@ -104,7 +126,25 @@ export default function Home() {
 
       {/* Intro Section */}
       <section className="py-24 bg-background text-foreground">
-        <div className="container mx-auto px-6 md:px-12 text-center max-w-4xl border-x border-muted/10 p-8 md:p-16 rounded-3xl bg-card-bg">
+        <div className="md:hidden container mx-auto flex justify-center">
+          <div className="px-6 md:px-12 text-center w-[80%] border-x border-muted/10 p-8 md:p-16 rounded-3xl bg-card-bg">
+            <div className="inline-block text-primary font-bold tracking-widest text-xs uppercase mb-4">
+              Welcome to Ambar
+            </div>
+            <h2 className="font-serif text-2xl font-bold mb-6 text-foreground">
+              A Legacy of Exceptional Design and Trust
+            </h2>
+            <p className="text-muted text-sm leading-relaxed">
+              At Ambar Furniture, we believe that every home deserves
+              exceptional design. For over a decade, our local craftsmen have
+              been building furniture that is not only beautiful to look at, but
+              built to withstand the test of time. From premium sofas to elegant
+              wall framing, quality remains at the heart of everything we do.
+            </p>
+          </div>
+        </div>
+
+        <div className="hidden md:block container mx-auto px-6 md:px-12 text-center md:max-w-4xl border-x border-muted/10 p-8 md:p-16 rounded-3xl bg-card-bg">
           <div className="inline-block text-primary font-bold tracking-widest text-sm uppercase mb-4">
             Welcome to Ambar
           </div>
@@ -122,28 +162,28 @@ export default function Home() {
       </section>
 
       {/* Featured Products */}
-      <section className="py-24 bg-background">
+      <section className="py-2 md:py-24 bg-background">
         <div className="container mx-auto px-6 md:px-12">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 md:mb-12 gap-4">
             <div className="max-w-2xl">
-              <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4 text-foreground">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold mb-4 text-foreground">
                 Featured Products
               </h2>
-              <p className="text-muted text-lg">
+              <p className="text-muted text-sm md:text-lg">
                 Discover our handpicked selections designed to bring comfort and
                 sophistication to your home.
               </p>
             </div>
             <Link
               href="/products"
-              className="inline-flex items-center gap-2 text-primary dark:text-secondary-light font-semibold hover:underline underline-offset-4 mb-2"
+              className="inline-flex items-center gap-2 text-primary dark:text-secondary-light font-semibold hover:underline underline-offset-4 mb-2 text-sm pt-4 md:py-0"
             >
               View All Products
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-8">
             {featuredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
@@ -155,33 +195,14 @@ export default function Home() {
       <section className="py-24 bg-background dark:bg-[#1A1210] border-y border-muted/10">
         <div className="container mx-auto px-6 md:px-12 text-center">
           <h2 className="font-serif text-white text-3xl md:text-4xl font-bold mb-16">
-            What Our Customers Say
+            What Our <br className="md:hidden"/> Customers Say
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {[
-              {
-                name: "Chudgar Amaan",
-                role: "Interior Designer",
-                content:
-                  "The Sultan Sofa exceeded all my expectations. The craftsmanship is pristine and it instantly became the centerpiece of my client's living room.",
-              },
-              {
-                name: "Lokhandwala Nadeem",
-                role: "Homeowner",
-                content:
-                  "We installed the Ambar Kitchen Cupboards last month. The soft-close features and minimalist design completely transformed our kitchen.",
-              },
-              {
-                name: "Mansuri Sameer",
-                role: "Architect",
-                content:
-                  "When I need high-quality, reliable wood furniture for a project, Ambar is my first stop. Their attention to detail on the Oak Dining Table is remarkable.",
-              },
-            ].map((testimonial, i) => (
+            {testimonials.map((testimonial, i) => (
               <div
                 key={i}
-                className="bg-card-dark-bg  dark:from-stone-900 dark:to-stone-950 dark:border-primary/20 shadow-md p-8 rounded-2xl flex flex-col items-center text-center transition-transform hover:-translate-y-1"
+                className="bg-card-dark-bg border border-colour-border  dark:from-stone-900 dark:to-stone-950 dark:border-primary/20 shadow-md p-8 rounded-2xl flex flex-col items-center text-center transition-transform hover:-translate-y-1"
               >
                 <div className="flex text-amber-500 mb-6 gap-1">
                   {[...Array(5)].map((_, i) => (
@@ -189,7 +210,7 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-white/80 dark:text-neutral-300 font-medium italic mb-8 grow">
-                  "{testimonial.content}"
+                  &ldquo; {testimonial.content} &rdquo;
                 </p>
                 <div>
                   <h4 className="font-bold text-white dark:text-white text-lg">

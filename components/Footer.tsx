@@ -1,12 +1,68 @@
+"use client";
+
 import Link from "next/link";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail, ChevronDown } from "lucide-react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+interface FooterSectionProps {
+  title: string;
+  children: React.ReactNode;
+}
+
+const FooterSection = ({ title, children }: FooterSectionProps) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="border-b border-white/5 md:border-none">
+      {/* Mobile Header */}
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex w-full items-center justify-between py-6 md:hidden"
+      >
+        <h4 className="font-serif font-bold text-lg">{title}</h4>
+        <motion.div
+          animate={{ rotate: isOpen ? 180 : 0 }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+        >
+          <ChevronDown className="w-5 h-5 text-primary" />
+        </motion.div>
+      </button>
+
+      {/* Desktop Header */}
+      <h4 className="hidden md:block font-serif font-bold text-lg mb-6">
+        {title}
+      </h4>
+
+      {/* Mobile Content */}
+      <div className="md:hidden">
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="overflow-hidden"
+            >
+              <div className="pb-6">{children}</div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+
+      {/* Desktop Content */}
+      <div className="hidden md:block">{children}</div>
+    </div>
+  );
+};
 
 export default function Footer() {
   return (
     <footer className="bg-background border-t border-white/10 pt-16 pb-8 mt-auto text-white">
-      <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+      <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 md:gap-12 mb-12">
         {/* Brand */}
-        <div className="md:col-span-1">
+        <div className="md:col-span-1 border-b border-white/5 md:border-none pb-8 md:pb-0">
           <Link href="/" className="inline-block mb-4">
             <span className="font-serif text-2xl font-bold tracking-tight text-primary dark:text-primary-light">
               Ambar.
@@ -39,8 +95,7 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div>
-          <h4 className="font-serif font-bold text-lg mb-6">Quick Links</h4>
+        <FooterSection title="Quick Links">
           <ul className="flex flex-col gap-3 text-sm text-foreground/80">
             <li>
               <Link href="/" className="hover:text-primary transition-colors">
@@ -72,11 +127,10 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
-        </div>
+        </FooterSection>
 
         {/* Categories */}
-        <div>
-          <h4 className="font-serif font-bold text-lg mb-6">Categories</h4>
+        <FooterSection title="Categories">
           <ul className="flex flex-col gap-3 text-sm text-foreground/80">
             <li>
               <Link
@@ -111,11 +165,10 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
-        </div>
+        </FooterSection>
 
         {/* Contact Info */}
-        <div>
-          <h4 className="font-serif font-bold text-lg mb-6">Contact Us</h4>
+        <FooterSection title="Contact Us">
           <ul className="flex flex-col gap-4 text-sm text-foreground/80">
             <li className="flex items-start gap-3">
               <MapPin className="w-5 h-5 text-primary shrink-0" />
@@ -133,7 +186,7 @@ export default function Footer() {
               <span>wasimbandwala@gmail.com</span>
             </li>
           </ul>
-        </div>
+        </FooterSection>
       </div>
 
       <div className="container mx-auto px-6 md:px-12 text-center text-sm border-t border-muted/20 pt-8 text-muted">

@@ -23,7 +23,7 @@ export default async function ProductDetails({
   }
 
   // Use a dummy WhatsApp number for inquiry
-  const whatsappNumber = "+1234567890";
+  const whatsappNumber = "+91 8469026605";
   const whatsappMessage = `Hi, I'm interested in the ${product.name} from Ambar Furniture.`;
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 

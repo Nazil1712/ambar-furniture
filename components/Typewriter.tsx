@@ -14,7 +14,7 @@ export default function Typewriter({
   words,
   typingSpeed = 50,
   deletingSpeed = 50,
-  pauseTime = 2000,
+  pauseTime = 1200,
 }: TypewriterProps) {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");

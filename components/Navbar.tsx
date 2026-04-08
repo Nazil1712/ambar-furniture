@@ -36,7 +36,7 @@ export default function Navbar() {
           : "bg-transparent ",
       )}
     >
-      <div className="mx-auto px-6 h-20 flex justify-between items-center pt-3 pb-3 pl-10 pr-10">
+      <div className="mx-auto px-6 md:h-20 flex justify-between items-center pt-3 pb-3 pl-10 pr-10">
         {/* Left: Logo */}
         <Link href="/" className="flex items-center gap-2 group">
           <span
@@ -99,7 +99,7 @@ export default function Navbar() {
               className="absolute top-6 right-6 p-2 text-neutral-800 dark:text-neutral-200 hover:text-primary dark:hover:text-primary-light"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <X className="w-6 h-6" />
+              <X className="w-6 h-6 text-primary" />
             </button>
             <nav className="flex flex-col gap-6 mt-10">
               {navLinks.map((link) => (
@@ -117,7 +117,7 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <Link
+              {/* <Link
                 href="/contact"
                 onClick={() => setMobileMenuOpen(false)}
                 className={clsx(
@@ -128,7 +128,7 @@ export default function Navbar() {
                 )}
               >
                 Let&apos;s Collab
-              </Link>
+              </Link> */}
             </nav>
           </motion.div>
         )}

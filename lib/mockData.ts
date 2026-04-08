@@ -41,7 +41,7 @@ export const featuredProductsArr: Product[] = [
   {
     id: "sultan-premium-cupboard-1",
     name: "Sultan",
-    shortDescription: "Premium Cup Boards",
+    shortDescription: "Elegant and spacious premium cupboard",
     description:
       "The Sultan is a masterpiece of modern craftsmanship, beautifully blending the comfort of a luxury sofa with the utility of a premium bed. Designed with high-density foam and rich upholstery to provide unmatched relaxation.",
     price: 899,
@@ -108,7 +108,7 @@ export const mockProducts: Product[] = [
   {
     id: "sultan-premium-cupboard-1",
     name: "Sultan 1",
-    shortDescription: "Premium Cup Boards",
+    shortDescription: "Elegant and spacious premium cupboard",
     description:
       "The Sultan is a masterpiece of modern craftsmanship, beautifully blending the comfort of a luxury sofa with the utility of a premium bed. Designed with high-density foam and rich upholstery to provide unmatched relaxation.",
     price: 899,
@@ -124,7 +124,7 @@ export const mockProducts: Product[] = [
   {
     id: "sultan-premium-cupboard-2",
     name: "Sultan 2",
-    shortDescription: "Premium Cup Boards",
+    shortDescription: "Elegant and spacious premium cupboard",
     description:
       "The Sultan is a masterpiece of modern craftsmanship, beautifully blending the comfort of a luxury sofa with the utility of a premium bed. Designed with high-density foam and rich upholstery to provide unmatched relaxation.",
     price: 899,
@@ -140,7 +140,7 @@ export const mockProducts: Product[] = [
   {
     id: "sultan-premium-cupboard-3",
     name: "Sultan 3",
-    shortDescription: "Premium Cup Boards",
+    shortDescription: "Elegant and spacious premium cupboard",
     description:
       "The Sultan is a masterpiece of modern craftsmanship, beautifully blending the comfort of a luxury sofa with the utility of a premium bed. Designed with high-density foam and rich upholstery to provide unmatched relaxation.",
     price: 899,
@@ -156,7 +156,7 @@ export const mockProducts: Product[] = [
   {
     id: "sultan-premium-cupboard-4",
     name: "Sultan 4",
-    shortDescription: "Premium Cup Boards",
+    shortDescription: "Elegant and spacious premium cupboard",
     description:
       "The Sultan is a masterpiece of modern craftsmanship, beautifully blending the comfort of a luxury sofa with the utility of a premium bed. Designed with high-density foam and rich upholstery to provide unmatched relaxation.",
     price: 899,
@@ -172,7 +172,7 @@ export const mockProducts: Product[] = [
   {
     id: "sultan-premium-cupboard-5",
     name: "Sultan 5",
-    shortDescription: "Premium Cup Boards",
+    shortDescription: "Elegant and spacious premium cupboard",
     description:
       "The Sultan is a masterpiece of modern craftsmanship, beautifully blending the comfort of a luxury sofa with the utility of a premium bed. Designed with high-density foam and rich upholstery to provide unmatched relaxation.",
     price: 899,
@@ -188,7 +188,7 @@ export const mockProducts: Product[] = [
   {
     id: "sultan-premium-cupboard-6",
     name: "Sultan 6",
-    shortDescription: "Premium Cup Boards",
+    shortDescription: "Elegant and spacious premium cupboard",
     description:
       "The Sultan is a masterpiece of modern craftsmanship, beautifully blending the comfort of a luxury sofa with the utility of a premium bed. Designed with high-density foam and rich upholstery to provide unmatched relaxation.",
     price: 899,
@@ -204,7 +204,7 @@ export const mockProducts: Product[] = [
   {
     id: "sultan-premium-cupboard-7",
     name: "Sultan 7",
-    shortDescription: "Premium Cup Boards",
+    shortDescription: "Elegant and spacious premium cupboard",
     description:
       "The Sultan is a masterpiece of modern craftsmanship, beautifully blending the comfort of a luxury sofa with the utility of a premium bed. Designed with high-density foam and rich upholstery to provide unmatched relaxation.",
     price: 899,
