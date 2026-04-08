@@ -40,8 +40,8 @@ export default function Navbar() {
         {/* Left: Logo */}
         <Link href="/" className="flex items-center gap-2 group">
           <span
-            className="font-serif text-2xl font-bold tracking-tight text-foreground group-hover:scale-105 
-          group-hover:text-primary-light transition-transform "
+            className="font-serif text-2xl font-bold tracking-tight md:text-foreground group-hover:scale-105 
+          group-hover:text-primary-light transition-transform text-primary"
           >
             Ambar.
           </span>

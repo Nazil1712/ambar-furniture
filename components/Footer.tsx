@@ -1,9 +1,10 @@
 "use client";
 
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { MapPin, Phone, Mail, ChevronDown } from "lucide-react";
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 
 interface FooterSectionProps {
   title: string;
@@ -12,6 +13,11 @@ interface FooterSectionProps {
 
 const FooterSection = ({ title, children }: FooterSectionProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   return (
     <div className="border-b border-white/5 md:border-none">

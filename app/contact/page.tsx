@@ -5,10 +5,10 @@ export default function ContactPage() {
     <div className="min-h-screen bg-background pt-24 pb-16">
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mx-auto mb-16 py-12 border-b border-white/10">
-          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-foreground">
+          <h1 className="font-serif text-3xl md:text-5xl font-bold mb-6 text-foreground">
             Get in Touch
           </h1>
-          <p className="text-muted text-lg">
+          <p className="text-muted text-sm md:text-lg">
             Whether you have a question about our products, need a custom order,
             or just want to say hello, we're here to help.
           </p>
@@ -18,17 +18,17 @@ export default function ContactPage() {
           {/* Contact Details */}
           <div className="lg:col-span-2 space-y-12">
             <div>
-              <h2 className="font-serif text-3xl font-bold mb-8">
+              <h2 className="font-serif underline  underline-offset-4 decoration-primary text-white text-2xl md:text-3xl font-bold mb-8">
                 Contact Information
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-primary/10 rounded-xl text-primary">
-                    <MapPin className="w-6 h-6" />
+                    <MapPin className="w-4 h-4 md:w-6 md:h-6" />
                   </div>
                   <div>
                     <h4 className="font-bold mb-1 text-white">Our Factory</h4>
-                    <p className="text-muted hover:text-primary transition">
+                    <p className="text-muted text-sm md:text-base hover:text-primary transition">
                       39-2/C, Dolphin Estate, Dabhoi Road,
                       <br />
                       Beside Zenith School, Vadodara - 390004
@@ -38,7 +38,7 @@ export default function ContactPage() {
 
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-primary/10 rounded-xl text-primary">
-                    <Phone className="w-6 h-6" />
+                    <Phone className="w-4 h-4 md:w-6 md:h-6" />
                   </div>
 
                   <div>
@@ -46,7 +46,7 @@ export default function ContactPage() {
 
                     <a
                       href="tel:+919998180032"
-                      className="text-muted hover:text-primary transition"
+                      className="text-muted text-sm md:text-base hover:text-primary transition"
                     >
                       (+91) 9998180032
                     </a>
@@ -55,7 +55,7 @@ export default function ContactPage() {
 
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-primary/10 rounded-xl text-primary">
-                    <Mail className="w-6 h-6" />
+                    <Mail className="w-4 h-4 md:w-6 md:h-6" />
                   </div>
 
                   <div>
@@ -63,7 +63,7 @@ export default function ContactPage() {
 
                     <a
                       href="mailto:wasimbandwala@gmail.com?subject=Inquiry&body=Hello, I want to contact you."
-                      className="text-muted hover:text-primary transition"
+                      className="text-muted text-sm md:text-base hover:text-primary transition"
                     >
                       wasimbandwala@gmail.com
                     </a>
@@ -73,14 +73,14 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <h2 className="font-serif text-3xl font-bold mb-8">
+              <h2 className="font-serif text-white text-2xl md:text-3xl font-bold mb-4 md:mb-8 underline  underline-offset-4 decoration-primary">
                 Quick Connect
               </h2>
               <a
                 href="https://wa.me/9998180032"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-semibold transition-all w-full justify-center"
+                className="inline-flex text-sm md:text-base items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-semibold transition-all w-full justify-center"
               >
                 <MessageCircle className="w-6 h-6" />
                 Chat on WhatsApp
@@ -89,8 +89,8 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Form */}
-          <div className="lg:col-span-3 bg-background p-8 md:p-12 rounded-3xl shadow-lg border border-white/10 text-white">
-            <h2 className="font-serif text-3xl font-bold mb-8 text-white">
+          <div className="lg:col-span-3 bg-background p-5 md:p-12 rounded-3xl shadow-lg border border-white/10 text-white">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold mb-8 text-white">
               Send Us a Message
             </h2>
             <form className="space-y-6">
@@ -105,7 +105,7 @@ export default function ContactPage() {
                   <input
                     type="text"
                     id="name"
-                    className="w-full px-4 py-3 rounded-xl border border-white/20 bg-background/50 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                    className="w-full px-4 py-3 text-sm md:text-base rounded-xl border border-white/20 bg-background/50 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                     placeholder="John Doe"
                   />
                 </div>
@@ -119,7 +119,7 @@ export default function ContactPage() {
                   <input
                     type="email"
                     id="email"
-                    className="w-full px-4 py-3 rounded-xl border border-white/20 bg-background/50 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                    className="w-full text-sm md:text-base px-4 py-3 rounded-xl border border-white/20 bg-background/50 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -134,7 +134,7 @@ export default function ContactPage() {
                 <input
                   type="text"
                   id="subject"
-                  className="w-full px-4 py-3 rounded-xl border border-white/20 bg-background/50 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                  className="w-full text-sm md:text-base px-4 py-3 rounded-xl border border-white/20 bg-background/50 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                   placeholder="Inquiry about..."
                 />
               </div>
@@ -148,13 +148,13 @@ export default function ContactPage() {
                 <textarea
                   id="message"
                   rows={5}
-                  className="w-full px-4 py-3 rounded-xl border border-white/20 bg-background/50 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
+                  className="w-full text-sm md:text-base px-4 py-3 rounded-xl border border-white/20 bg-background/50 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
                   placeholder="How can we help you?"
                 ></textarea>
               </div>
               <button
                 type="button"
-                className="w-full bg-primary hover:bg-primary-light text-black px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-primary/20"
+                className="w-full bg-primary hover:bg-primary-light text-black px-8 py-3 md:py-4 rounded-xl font-bold transition-all shadow-lg shadow-primary/20"
               >
                 Send Message
               </button>
