@@ -127,7 +127,7 @@ export default function Home() {
       {/* Intro Section */}
       <section className="py-24 bg-background text-foreground">
         <div className="md:hidden container mx-auto flex justify-center">
-          <div className="px-6 md:px-12 text-center w-[80%] border-x border-muted/10 p-8 md:p-16 rounded-3xl bg-card-bg">
+          <div className="px-6 md:px-12 text-center w-[87%] border-x border-muted/10 p-8 md:p-16 rounded-3xl bg-card-bg">
             <div className="inline-block text-primary font-bold tracking-widest text-xs uppercase mb-4">
               Welcome to Ambar
             </div>

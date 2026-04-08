@@ -10,6 +10,7 @@
   --color-foreground: #171717; /* Neutral 900 */
   --color-muted: #737373; /* Neutral 500 */
   --color-colour-border: #D7D8DE69;
+  --color-colour-light-border: #2C2C2C;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
@@ -58,5 +59,12 @@ h6 {
   }
   .glass {
     @apply bg-white/70 dark:bg-black/70 backdrop-blur-md border border-white/20 dark:border-white/10;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
