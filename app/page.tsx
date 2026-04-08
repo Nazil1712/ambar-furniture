@@ -229,7 +229,7 @@ export default function Home() {
           </h2>
 
           <div 
-            className="relative overflow-hidden w-full py-6 md:py-10 md:[mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]"
+            className="relative overflow-hidden w-full py-6 md:py-10 md:mask-[linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]"
           >
             <motion.div
               className="flex gap-4 md:gap-8 w-max px-6 md:px-0"
@@ -238,7 +238,7 @@ export default function Home() {
                 x: {
                   repeat: Infinity,
                   repeatType: "loop",
-                  duration: 40,
+                  duration: 80,
                   ease: "linear",
                 },
               }}
