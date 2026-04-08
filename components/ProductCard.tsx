@@ -9,7 +9,6 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <motion.div
       whileHover={{ scale: 1.03 }}
-      transition={{ duration: 0.3 }}
       className="group bg-card-bg dark:bg-neutral-900 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-white/10 hover:border-primary/50 transition-all duration-300 text-white"
     >
       <Link href={`/products/${product.id}`} className="block p-1 md:p-6 h-full">
@@ -18,7 +17,7 @@ export default function ProductCard({ product }: { product: Product }) {
             src={product.image}
             alt={product.name}
             fill
-            className="object-cover rounded-xl transition-transform duration-700 group-hover:scale-105"
+            className="object-cover rounded-xl transition-transform duration-700"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           <div className="absolute inset-0 bg-background/0 group-hover:bg-background/10 transition-colors duration-300 rounded-xl" />
