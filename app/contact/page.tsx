@@ -4,7 +4,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-background pt-24 pb-16">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center mx-auto mb-16 py-12 border-b border-white/10">
           <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Get in Touch
           </h1>
@@ -27,13 +27,11 @@ export default function ContactPage() {
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="font-bold mb-1">Our Showroom</h4>
-                    <p className="text-muted">
-                      123 Furniture Street,
+                    <h4 className="font-bold mb-1 text-white">Our Factory</h4>
+                    <p className="text-muted hover:text-primary transition">
+                      39-2/C, Dolphin Estate, Dabhoi Road,
                       <br />
-                      Craftsmanship District,
-                      <br />
-                      City, Country
+                      Beside Zenith School, Vadodara - 390004
                     </p>
                   </div>
                 </div>
@@ -42,9 +40,16 @@ export default function ContactPage() {
                   <div className="p-3 bg-primary/10 rounded-xl text-primary">
                     <Phone className="w-6 h-6" />
                   </div>
+
                   <div>
-                    <h4 className="font-bold mb-1">Phone</h4>
-                    <p className="text-muted">+1 (555) 123-4567</p>
+                    <h4 className="font-bold mb-1 text-white">Phone</h4>
+
+                    <a
+                      href="tel:+919998180032"
+                      className="text-muted hover:text-primary transition"
+                    >
+                      (+91) 9998180032
+                    </a>
                   </div>
                 </div>
 
@@ -52,9 +57,16 @@ export default function ContactPage() {
                   <div className="p-3 bg-primary/10 rounded-xl text-primary">
                     <Mail className="w-6 h-6" />
                   </div>
+
                   <div>
-                    <h4 className="font-bold mb-1">Email</h4>
-                    <p className="text-muted">hello@ambarfurniture.com</p>
+                    <h4 className="font-bold mb-1 text-white">Email</h4>
+
+                    <a
+                      href="mailto:wasimbandwala@gmail.com?subject=Inquiry&body=Hello, I want to contact you."
+                      className="text-muted hover:text-primary transition"
+                    >
+                      wasimbandwala@gmail.com
+                    </a>
                   </div>
                 </div>
               </div>
@@ -65,7 +77,7 @@ export default function ContactPage() {
                 Quick Connect
               </h2>
               <a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/9998180032"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-semibold transition-all w-full justify-center"
@@ -153,7 +165,7 @@ export default function ContactPage() {
         {/* Google Maps Embed */}
         <div className="mt-20 rounded-3xl overflow-hidden h-[400px] border border-muted/20">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116315.63229606899!2d-88.08182902621021!3d43.20456184511598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88051a81e9196b01%3A0xb353ac07abdcffe!2sFurniture%20Row!5e0!3m2!1sen!2sus!4v1714522336688!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.8609177713793!2d73.21054357599327!3d22.28325774351163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc596bf067833%3A0x460ae5cdddad6056!2sDolphin%20Estate!5e0!3m2!1sen!2sin!4v1775629566960!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}

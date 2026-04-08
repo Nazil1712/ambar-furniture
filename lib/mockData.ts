@@ -39,7 +39,7 @@ export interface Product {
 
 export const featuredProductsArr: Product[] = [
   {
-    id: "sultan-premium-cupboard",
+    id: "sultan-premium-cupboard-1",
     name: "Sultan",
     shortDescription: "Premium Cup Boards",
     description:
@@ -55,7 +55,7 @@ export const featuredProductsArr: Product[] = [
     category: "Cup Boards",
   },
   {
-    id: "premium-folding-bed",
+    id: "premium-folding-bed-1",
     name: "Folding Bed",
     shortDescription: "Space-saving elegant folding bed",
     description:
@@ -71,7 +71,7 @@ export const featuredProductsArr: Product[] = [
     category: "Beds",
   },
   {
-    id: "decorative-wall-framing",
+    id: "decorative-wall-framing-1",
     name: "Wall Frames",
     shortDescription: "Artisan crafted wood wall panelling",
     description:
@@ -87,7 +87,7 @@ export const featuredProductsArr: Product[] = [
     category: "Decor",
   },
   {
-    id: "modern-kitchen-cupboards",
+    id: "modern-kitchen-cupboards-1",
     name: "Kitchen Cupboards",
     shortDescription: "Sleek and functional kitchen storage",
     description:
@@ -106,7 +106,7 @@ export const featuredProductsArr: Product[] = [
 
 export const mockProducts: Product[] = [
   {
-    id: "sultan-premium-cupboard 1",
+    id: "sultan-premium-cupboard-1",
     name: "Sultan 1",
     shortDescription: "Premium Cup Boards",
     description:
@@ -122,7 +122,7 @@ export const mockProducts: Product[] = [
     category: "Cup Boards",
   },
   {
-    id: "sultan-premium-cupboard 2",
+    id: "sultan-premium-cupboard-2",
     name: "Sultan 2",
     shortDescription: "Premium Cup Boards",
     description:
@@ -138,7 +138,7 @@ export const mockProducts: Product[] = [
     category: "Cup Boards",
   },
   {
-    id: "sultan-premium-cupboard 3",
+    id: "sultan-premium-cupboard-3",
     name: "Sultan 3",
     shortDescription: "Premium Cup Boards",
     description:
@@ -154,7 +154,7 @@ export const mockProducts: Product[] = [
     category: "Cup Boards",
   },
   {
-    id: "sultan-premium-cupboard 4",
+    id: "sultan-premium-cupboard-4",
     name: "Sultan 4",
     shortDescription: "Premium Cup Boards",
     description:
@@ -170,7 +170,7 @@ export const mockProducts: Product[] = [
     category: "Cup Boards",
   },
   {
-    id: "sultan-premium-cupboard 5",
+    id: "sultan-premium-cupboard-5",
     name: "Sultan 5",
     shortDescription: "Premium Cup Boards",
     description:
@@ -186,7 +186,7 @@ export const mockProducts: Product[] = [
     category: "Cup Boards",
   },
   {
-    id: "sultan-premium-cupboard 6",
+    id: "sultan-premium-cupboard-6",
     name: "Sultan 6",
     shortDescription: "Premium Cup Boards",
     description:
@@ -202,7 +202,7 @@ export const mockProducts: Product[] = [
     category: "Cup Boards",
   },
   {
-    id: "sultan-premium-cupboard 7",
+    id: "sultan-premium-cupboard-7",
     name: "Sultan 7",
     shortDescription: "Premium Cup Boards",
     description:
@@ -218,7 +218,7 @@ export const mockProducts: Product[] = [
     category: "Cup Boards",
   },
   {
-    id: "premium-folding-bed 1",
+    id: "premium-folding-bed-1",
     name: "Folding Bed 1",
     shortDescription: "Space-saving elegant folding bed",
     description:
@@ -234,7 +234,7 @@ export const mockProducts: Product[] = [
     category: "Beds",
   },
   {
-    id: "premium-folding-bed 2",
+    id: "premium-folding-bed-2",
     name: "Folding Bed 2",
     shortDescription: "Space-saving elegant folding bed",
     description:
@@ -250,7 +250,7 @@ export const mockProducts: Product[] = [
     category: "Beds",
   },
   {
-    id: "premium-folding-bed 3",
+    id: "premium-folding-bed-3",
     name: "Folding Bed 3",
     shortDescription: "Space-saving elegant folding bed",
     description:
@@ -266,7 +266,7 @@ export const mockProducts: Product[] = [
     category: "Beds",
   },
   {
-    id: "premium-folding-bed 4",
+    id: "premium-folding-bed-4",
     name: "Folding Bed 4",
     shortDescription: "Space-saving elegant folding bed",
     description:
@@ -282,7 +282,7 @@ export const mockProducts: Product[] = [
     category: "Beds",
   },
   {
-    id: "premium-folding-bed 5",
+    id: "premium-folding-bed-5",
     name: "Folding Bed 5",
     shortDescription: "Space-saving elegant folding bed",
     description:
@@ -298,7 +298,7 @@ export const mockProducts: Product[] = [
     category: "Beds",
   },
   {
-    id: "premium-folding-bed 6",
+    id: "premium-folding-bed-6",
     name: "Folding Bed 6",
     shortDescription: "Space-saving elegant folding bed",
     description:
@@ -314,7 +314,7 @@ export const mockProducts: Product[] = [
     category: "Beds",
   },
   {
-    id: "decorative-wall-framing 1",
+    id: "decorative-wall-framing-1",
     name: "Wall Frame 1",
     shortDescription: "Artisan crafted wood wall panelling",
     description:
@@ -330,7 +330,7 @@ export const mockProducts: Product[] = [
     category: "Decor",
   },
   {
-    id: "decorative-wall-framing 2",
+    id: "decorative-wall-framing-2",
     name: "Wall Frame 2",
     shortDescription: "Artisan crafted wood wall panelling",
     description:
@@ -346,7 +346,7 @@ export const mockProducts: Product[] = [
     category: "Decor",
   },
   {
-    id: "decorative-wall-framing 3",
+    id: "decorative-wall-framing-3",
     name: "Wall Frame 3",
     shortDescription: "Artisan crafted wood wall panelling",
     description:
@@ -362,7 +362,7 @@ export const mockProducts: Product[] = [
     category: "Decor",
   },
   {
-    id: "decorative-wall-framing 4",
+    id: "decorative-wall-framing-4",
     name: "Wall Frame 4",
     shortDescription: "Artisan crafted wood wall panelling",
     description:
@@ -378,7 +378,7 @@ export const mockProducts: Product[] = [
     category: "Decor",
   },
   {
-    id: "decorative-wall-framing 5",
+    id: "decorative-wall-framing-6",
     name: "Wall Frame 6",
     shortDescription: "Artisan crafted wood wall panelling",
     description:
@@ -394,7 +394,7 @@ export const mockProducts: Product[] = [
     category: "Decor",
   },
   {
-    id: "decorative-wall-framing 6",
+    id: "decorative-wall-framing-7",
     name: "Wall Frame 7",
     shortDescription: "Artisan crafted wood wall panelling",
     description:
@@ -410,7 +410,7 @@ export const mockProducts: Product[] = [
     category: "Decor",
   },
   {
-    id: "decorative-wall-framing 7",
+    id: "decorative-wall-framing-8",
     name: "Wall Frame 8",
     shortDescription: "Artisan crafted wood wall panelling",
     description:
@@ -426,7 +426,7 @@ export const mockProducts: Product[] = [
     category: "Decor",
   },
   {
-    id: "decorative-wall-framing 8",
+    id: "decorative-wall-framing-9",
     name: "Wall Frame 9",
     shortDescription: "Artisan crafted wood wall panelling",
     description:
@@ -442,7 +442,7 @@ export const mockProducts: Product[] = [
     category: "Decor",
   },
   {
-    id: "modern-kitchen-cupboards 1",
+    id: "modern-kitchen-cupboards-1",
     name: "Kitchen Cupboard 1",
     shortDescription: "Sleek and functional kitchen storage",
     description:
@@ -458,7 +458,7 @@ export const mockProducts: Product[] = [
     category: "Storage",
   },
   {
-    id: "modern-kitchen-cupboards 2",
+    id: "modern-kitchen-cupboards-2",
     name: "Kitchen Cupboard 2",
     shortDescription: "Sleek and functional kitchen storage",
     description:
@@ -474,7 +474,7 @@ export const mockProducts: Product[] = [
     category: "Storage",
   },
   {
-    id: "modern-kitchen-cupboards 3",
+    id: "modern-kitchen-cupboards-3",
     name: "Kitchen Cupboard 3",
     shortDescription: "Sleek and functional kitchen storage",
     description:
@@ -490,7 +490,7 @@ export const mockProducts: Product[] = [
     category: "Storage",
   },
   {
-    id: "modern-kitchen-cupboards 4",
+    id: "modern-kitchen-cupboards-4",
     name: "Kitchen Cupboard 4",
     shortDescription: "Sleek and functional kitchen storage",
     description:

@@ -29,7 +29,7 @@ export default function ProductsPage() {
   return (
     <div className="min-h-screen bg-background pt-24 pb-16">
       {/* Header Section */}
-      <div className="bg-background py-12 mb-12 text-white">
+      <div className="container mx-auto bg-background py-12 mb-12 text-white border-b border-white/10">
         <div className="container mx-auto px-6 md:px-12 text-center max-w-2xl">
           <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-white">
             Our Products

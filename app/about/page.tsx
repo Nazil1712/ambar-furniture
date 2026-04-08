@@ -1,24 +1,13 @@
 import Image from "next/image";
 import { ShieldCheck, Recycle, PenTool } from "lucide-react";
 import imgAboutHero from "@/app/images/wall-framing/Wall-Framing-2.png";
-import imgWorkshop from "@/app/images/sultan/Sultan-2.png";
+import imgAbout from "@/app/images/Ambar_about-us.png";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pt-24 pb-16">
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src={imgAboutHero}
-            alt="Crafting Furniture"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-background/50 dark:bg-background/70" />
-        </div>
-
+      <section className="container mx-auto py-12 flex items-center justify-center overflow-hidden  border-b border-white/10">
         <div className="relative z-10 text-center text-white px-6">
           <h1 className="font-serif text-5xl md:text-7xl font-bold tracking-tight mb-6">
             Our Story
@@ -47,21 +36,21 @@ export default function AboutPage() {
                 <p>
                   Our founders believed that mass-produced furniture lacked the
                   soul and durability of true craftsmanship. Thus, Ambar was
-                  born from a passion for woodwork and a dedication to the
+                  born from a passion for metal sheet and a dedication to the
                   age-old techniques of joinery and finishing.
                 </p>
                 <p>
                   Today, we continue to honor that legacy. Every piece in our
-                  collection, from the majestic Sultan sofa to our intricate
-                  wall framings, is conceptualized, designed, and built by
-                  skilled artisans who treat wood like canvas.
+                  collection, from the majestic Sultan Cup Board to our
+                  intricate wall framings, is conceptualized, designed, and
+                  built by skilled artisans who treat wood like canvas.
                 </p>
               </div>
             </div>
 
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src={imgWorkshop}
+                src={imgAbout}
                 alt="Workshop Details"
                 fill
                 className="object-cover"
@@ -72,7 +61,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-24 bg-background border-y border-white/10 text-white">
+      <section className="py-24 bg-background border-t border-white/10 text-white">
         <div className="container mx-auto px-6 md:px-12 text-center max-w-6xl">
           <h2 className="font-serif text-4xl font-bold mb-16 text-white">
             Our Core Values
