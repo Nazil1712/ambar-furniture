@@ -104,14 +104,14 @@ export default function Footer() {
         <FooterSection title="Quick Links">
           <ul className="flex flex-col gap-3 text-sm text-foreground/80">
             <li>
-              <Link href="/" className="hover:text-primary transition-colors">
+              <Link href="/" className="hover:text-primary transition-colors underline-animated">
                 Home
               </Link>
             </li>
             <li>
               <Link
                 href="/products"
-                className="hover:text-primary transition-colors"
+                className="hover:text-primary transition-colors underline-animated"
               >
                 All Products
               </Link>
@@ -119,7 +119,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/about"
-                className="hover:text-primary transition-colors"
+                className="hover:text-primary transition-colors underline-animated"
               >
                 About Us
               </Link>
@@ -127,7 +127,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/contact"
-                className="hover:text-primary transition-colors"
+                className="hover:text-primary transition-colors underline-animated"
               >
                 Contact
               </Link>
@@ -141,7 +141,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/products?category=Sofas"
-                className="hover:text-primary transition-colors"
+                className="hover:text-primary transition-colors underline-animated"
               >
                 Sofas & Beds
               </Link>
@@ -149,7 +149,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/products?category=Storage"
-                className="hover:text-primary transition-colors"
+                className="hover:text-primary transition-colors underline-animated"
               >
                 Kitchen Cupboards
               </Link>
@@ -157,7 +157,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/products?category=Decor"
-                className="hover:text-primary transition-colors"
+                className="hover:text-primary transition-colors underline-animated"
               >
                 Wall Framing
               </Link>
@@ -165,7 +165,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/products?category=Chairs"
-                className="hover:text-primary transition-colors"
+                className="hover:text-primary transition-colors underline-animated"
               >
                 Chairs
               </Link>
@@ -178,27 +178,63 @@ export default function Footer() {
           <ul className="flex flex-col gap-4 text-sm text-foreground/80">
             <li className="flex items-start gap-3">
               <MapPin className="w-5 h-5 text-primary shrink-0" />
-              <span>
+              <a
+                href="https://maps.app.goo.gl/qa97JQHM7g9KwoLr8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary"
+              >
                 39-2/C, Dolphin Estate, Dabhoi Road, Beside Zenith School,
                 Vadodara - 390004
-              </span>
+              </a>
             </li>
             <li className="flex items-center gap-3">
               <Phone className="w-5 h-5 text-primary shrink-0" />
-              <span>( +91 ) 9998180032</span>
+              <div className="flex flex-col gap-1">
+                <a href="tel:+919998180032" className="hover:text-primary">
+                  ( +91 ) 9998180032
+                </a>
+                <a href="tel:+919824304085" className="hover:text-primary">
+                  ( +91 ) 9824304085
+                </a>
+              </div>
             </li>
             <li className="flex items-center gap-3">
               <Mail className="w-5 h-5 text-primary shrink-0" />
-              <span>wasimbandwala@gmail.com</span>
+              <a
+                href="mailto:wasimbandwala@gmail.com"
+                className="hover:text-primary"
+              >
+                wasimbandwala@gmail.com
+              </a>
             </li>
           </ul>
         </FooterSection>
       </div>
 
-      <div className="container mx-auto px-6 md:px-12 text-center text-sm border-t border-muted/20 pt-8 text-muted">
+      <div className="container mx-auto px-6 md:px-12 border-t border-muted/20 pt-8 text-muted text-sm flex flex-col md:flex-row justify-between items-center gap-4">
+        <p className="text-center">
+          &copy; {new Date().getFullYear()}{" "}
+          <Link
+            href="http://ambar-furniture.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-primary transition-colors font-semibold underline-animated"
+          >
+            Ambar Furniture
+          </Link>
+          . All rights reserved.
+        </p>
         <p>
-          &copy; {new Date().getFullYear()} Ambar Furniture. All rights
-          reserved.
+          Developed with ❤️ by{" "}
+          <Link
+            href="https://www.linkedin.com/in/nazil-dhalwala-267586223/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-primary transition-colors font-semibold underline-animated"
+          >
+            Nazil
+          </Link>
         </p>
       </div>
     </footer>

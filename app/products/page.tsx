@@ -31,7 +31,7 @@ export default function ProductsPage() {
       {/* Header Section */}
       <div className="container mx-auto bg-background py-8 md:py-12 mb-12 text-white border-b border-white/10">
         <div className="container mx-auto px-6 md:px-12 text-center max-w-2xl">
-          <h1 className="font-serif text-3xl md:text-5xl font-bold mb-6 text-white">
+          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-white">
             Our Products
           </h1>
           <p className="text-neutral-400 text-sm md:text-lg">

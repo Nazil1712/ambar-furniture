@@ -9,7 +9,8 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <motion.div
       whileHover={{ scale: 1.03 }}
-      className="group bg-card-bg dark:bg-neutral-900 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-white/10 hover:border-primary/50 transition-all duration-300 text-white"
+      transition={{ type: "spring", stiffness: 400, damping: 25 }}
+      className="group bg-card-bg dark:bg-neutral-900 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-white/10 hover:border-primary/50 transition-[shadow,border-color] duration-300 text-white transform-gpu will-change-transform"
     >
       <Link href={`/products/${product.id}`} className="block p-1 md:p-6 h-full">
         <div className="relative aspect-square overflow-hidden">

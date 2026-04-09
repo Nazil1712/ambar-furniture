@@ -9,8 +9,8 @@
   --color-surface: #000000; /* Pure Black as requested */
   --color-foreground: #171717; /* Neutral 900 */
   --color-muted: #737373; /* Neutral 500 */
-  --color-colour-border: #D7D8DE69;
-  --color-colour-light-border: #2C2C2C;
+  --color-colour-border: #d7d8de69;
+  --color-colour-light-border: #2c2c2c;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
@@ -66,5 +66,15 @@ h6 {
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+  .underline-animated {
+    @apply relative w-fit inline-block;
+  }
+  .underline-animated::after {
+    content: "";
+    @apply absolute bottom-[-2px] left-0 w-full h-px bg-primary origin-bottom-right scale-x-0 transition-transform duration-500;
+  }
+  .underline-animated:hover::after {
+    @apply origin-bottom-left scale-x-100;
   }
 }

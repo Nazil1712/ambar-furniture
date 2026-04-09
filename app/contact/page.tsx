@@ -4,8 +4,8 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-background pt-24 pb-16">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="text-center mx-auto mb-16 py-12 border-b border-white/10">
-          <h1 className="font-serif text-3xl md:text-5xl font-bold mb-6 text-foreground">
+        <div className="text-center mx-auto mb-12 md:mb-16 py-12 border-b border-white/10">
+          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Get in Touch
           </h1>
           <p className="text-muted text-sm md:text-lg">
@@ -18,8 +18,9 @@ export default function ContactPage() {
           {/* Contact Details */}
           <div className="lg:col-span-2 space-y-12">
             <div>
-              <h2 className="font-serif underline  underline-offset-4 decoration-primary text-white text-2xl md:text-3xl font-bold mb-8">
+              <h2 className="relative font-serif text-white text-2xl md:text-3xl font-bold mb-8 w-fit">
                 Contact Information
+                <span className="absolute -bottom-2 left-0 w-full h-1 bg-linear-to-r from-primary via-white/80 to-transparent rounded-full" />
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -44,12 +45,20 @@ export default function ContactPage() {
                   <div>
                     <h4 className="font-bold mb-1 text-white">Phone</h4>
 
-                    <a
-                      href="tel:+919998180032"
-                      className="text-muted text-sm md:text-base hover:text-primary transition"
-                    >
-                      (+91) 9998180032
-                    </a>
+                    <div className="flex flex-col gap-1">
+                      <a
+                        href="tel:+919998180032"
+                        className="text-muted text-sm md:text-base hover:text-primary transition"
+                      >
+                        ( +91 ) 9998180032
+                      </a>
+                      <a
+                        href="tel:+919824304085"
+                        className="text-muted text-sm md:text-base hover:text-primary transition"
+                      >
+                        ( +91 ) 9824304085
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -73,8 +82,9 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <h2 className="font-serif text-white text-2xl md:text-3xl font-bold mb-4 md:mb-8 underline  underline-offset-4 decoration-primary">
+              <h2 className="relative font-serif text-white text-2xl md:text-3xl font-bold mb-4 md:mb-8 w-fit">
                 Quick Connect
+                <span className="absolute -bottom-2 left-0 w-full h-1 bg-linear-to-r from-primary via-white/80 to-transparent rounded-full" />
               </h2>
               <a
                 href="https://wa.me/+91 9998180032?text=Hey, Can we Connect?"

@@ -4,7 +4,7 @@ import Link from "next/link";
 // import Image from 'next/image';
 import { featuredProductsArr, mockProducts } from "../lib/mockData";
 import ProductCard from "@/components/ProductCard";
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Star } from "lucide-react";
 import Image from "next/image";
 import imgHero from "@/app/images/sultan/Sultan-3.png";
 import { motion } from "framer-motion";
@@ -28,7 +28,7 @@ export default function Home() {
       name: "Patel Imtiyaz",
       role: "Interior Designer",
       content:
-        "The Sultan Sofa exceeded all my expectations. The craftsmanship is pristine and it instantly became the centerpiece of my client's living room.",
+        "The Sultan CupBoard exceeded all my expectations. The craftsmanship is pristine and it instantly became the centerpiece of my client's living room.",
     },
     {
       name: "Lokhandwala Nadeem",
@@ -143,11 +143,17 @@ export default function Home() {
           <div className="animate-in slide-in-from-bottom duration-1000 delay-400 fade-in fill-mode-both">
             <Link
               href="/products"
-              className="inline-flex items-center gap-3 bg-primary hover:bg-primary-light text-black px-5 py-3 md:px-10 md:py-5 rounded-full font-bold text-sm shadow-xl shadow-primary/20 transition-all hover:scale-105 active:scale-95"
+              className="group inline-flex items-center bg-primary text-black rounded-full font-bold text-sm shadow-md shadow-primary/20 transition-all duration-300 active:scale-95 will-change-transform transform-gpu overflow-hidden"
             >
-              Explore Products
-              <div className="bg-background/10 p-1 rounded-full">
-                <ArrowRight className="w-5 h-5" />
+              <span className="px-5 py-3 md:px-8 md:py-5 transition-all duration-300 group-hover:-translate-x-1 group-active:-translate-x-1">
+                Explore Products
+              </span>
+              <div className="w-2 my-0.5 self-stretch bg-black/0 group-hover:bg-black group-active:bg-black transition-all duration-300" />
+              <div className="px-4 py-3 md:px-6 md:py-5 text-black">
+                <div className="relative w-5 h-5">
+                  <ArrowUpRight className="absolute inset-0 w-5 h-5 transition-all duration-300 group-hover:opacity-0 group-hover:rotate-45 group-active:opacity-0 group-active:rotate-45" />
+                  <ArrowRight className="absolute inset-0 w-5 h-5 transition-all duration-300 opacity-0 -rotate-45 group-hover:opacity-100 group-hover:rotate-0 group-active:opacity-100 group-active:rotate-0" />
+                </div>
               </div>
             </Link>
           </div>
@@ -246,7 +252,7 @@ export default function Home() {
               {[...testimonials, ...testimonials].map((testimonial, i) => (
                 <div
                   key={i}
-                  className="w-[260px] md:w-[400px] shrink-0 bg-card-dark-bg border border-colour-border shadow-md p-6 md:p-8 rounded-2xl flex flex-col items-center text-center transition-transform hover:scale-[1.02]"
+                  className="w-[260px] md:w-[400px] shrink-0 bg-card-dark-bg border border-colour-border shadow-md p-6 md:p-8 rounded-2xl flex flex-col items-center text-center transition-transform hover:scale-[1.02] cursor-pointer"
                 >
                   <div className="flex text-amber-500 mb-4 md:mb-6 gap-1">
                     {[...Array(5)].map((_, i) => (

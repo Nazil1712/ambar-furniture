@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, ArrowUpRight } from "lucide-react";
+import { Menu, X, ArrowUpRight, ArrowRight } from "lucide-react";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import { motion, AnimatePresence } from "framer-motion";
@@ -40,8 +40,8 @@ export default function Navbar() {
         {/* Left: Logo */}
         <Link href="/" className="flex items-center gap-2 group">
           <span
-            className="font-serif text-2xl font-bold tracking-tight md:text-foreground group-hover:scale-105 
-          group-hover:text-primary-light transition-transform text-primary"
+            className="inline-block font-serif text-2xl font-bold tracking-tight md:text-foreground group-hover:scale-110 
+          group-hover:text-primary-light transition-all duration-300 ease-out text-primary will-change-transform transform-gpu"
           >
             Ambar.
           </span>
@@ -69,10 +69,13 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <Link
             href="/contact"
-            className="hidden md:flex items-center gap-2 px-6 py-2.5 bg-transparent border border-primary text-primary rounded-full text-sm font-bold hover:opacity-90 transition-all hover:scale-105 group"
+            className="hidden md:flex items-center gap-2 px-6 py-2.5 bg-transparent border border-primary text-primary rounded-full text-sm font-bold hover:bg-primary/5 transition-all duration-300 hover:scale-105 active:scale-95 will-change-transform transform-gpu group"
           >
             Let&apos;s Meet
-            <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            <div className="relative w-4 h-4">
+              <ArrowUpRight className="absolute inset-0 w-4 h-4 transition-all duration-300 group-hover:opacity-0 group-hover:rotate-45" />
+              <ArrowRight className="absolute inset-0 w-4 h-4 transition-all duration-300 opacity-0 -rotate-45 group-hover:opacity-100 group-hover:rotate-0" />
+            </div>
           </Link>
 
           {/* Mobile Menu Button */}

@@ -72,12 +72,12 @@ export const featuredProductsArr: Product[] = [
   },
   {
     id: "decorative-wall-framing-1",
-    name: "Wall Frames",
+    name: "Wall Frame",
     shortDescription: "Artisan crafted wood wall panelling",
     description:
       "Transform your walls into pieces of art with our custom wall framing. Hand-crafted from premium wood, these frames add a touch of warmth and sophistication to any interior space.",
     price: 299,
-    image: imgWallFraming1,
+    image: imgWallFraming2,
     features: [
       "Premium rich wood finish",
       "Customizable dimensions",
@@ -88,7 +88,7 @@ export const featuredProductsArr: Product[] = [
   },
   {
     id: "modern-kitchen-cupboards-1",
-    name: "Kitchen Cupboards",
+    name: "Kitchen Cupboard",
     shortDescription: "Sleek and functional kitchen storage",
     description:
       "Organize your culinary space with our modern kitchen cupboards. Designed for maximum storage efficiency while maintaining a sleek, minimalist aesthetic that complements any modern home.",
