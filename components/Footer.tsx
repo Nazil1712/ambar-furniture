@@ -9,15 +9,16 @@ import { MapPin, Phone, Mail, ChevronDown } from "lucide-react";
 interface FooterSectionProps {
   title: string;
   children: React.ReactNode;
+  initiallyOpen?: boolean;
 }
 
-const FooterSection = ({ title, children }: FooterSectionProps) => {
-  const [isOpen, setIsOpen] = useState(false);
+const FooterSection = ({ title, children, initiallyOpen = false }: FooterSectionProps) => {
+  const [isOpen, setIsOpen] = useState(initiallyOpen);
   const pathname = usePathname();
 
   useEffect(() => {
-    setIsOpen(false);
-  }, [pathname]);
+    setIsOpen(initiallyOpen);
+  }, [pathname, initiallyOpen]);
 
   return (
     <div className="border-b border-white/5 md:border-none">
@@ -26,7 +27,9 @@ const FooterSection = ({ title, children }: FooterSectionProps) => {
         onClick={() => setIsOpen(!isOpen)}
         className="flex w-full items-center justify-between py-6 md:hidden"
       >
-        <h4 className="font-serif font-bold text-lg">{title}</h4>
+        <h4 className={`font-serif font-bold text-lg transition-colors duration-300 ${isOpen ? 'text-primary' : ''}`}>
+          {title}
+        </h4>
         <motion.div
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
@@ -174,7 +177,7 @@ export default function Footer() {
         </FooterSection>
 
         {/* Contact Info */}
-        <FooterSection title="Contact Us">
+        <FooterSection title="Contact Us" initiallyOpen={true}>
           <ul className="flex flex-col gap-4 text-sm text-foreground/80">
             <li className="flex items-start gap-3">
               <MapPin className="w-5 h-5 text-primary shrink-0" />
@@ -216,7 +219,7 @@ export default function Footer() {
         <p className="text-center">
           &copy; {new Date().getFullYear()}{" "}
           <Link
-            href="http://ambar-furniture.vercel.app/"
+            href="/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-primary transition-colors font-semibold underline-animated"

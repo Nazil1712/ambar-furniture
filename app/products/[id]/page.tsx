@@ -1,7 +1,7 @@
 import { mockProducts } from "@/lib/mockData";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, Check, MessageCircle } from "lucide-react";
+import { ArrowLeft, Check, MessageCircle, Phone } from "lucide-react";
 import { notFound } from "next/navigation";
 import ProductCard from "@/components/ProductCard";
 
@@ -89,19 +89,28 @@ export default async function ProductDetails({
               </ul>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 mt-auto">
-              <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl"
-              >
-                <MessageCircle className="w-5 h-5" />
-                Inquire on WhatsApp
-              </a>
+            <div className="flex flex-col gap-4 mt-auto">
+               <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="tel:+919998180032"
+                  className="flex-1 inline-flex items-center justify-center gap-3 bg-primary hover:bg-primary-light text-black px-8 py-4 rounded-full font-bold transition-all shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 translate-gpu"
+                >
+                  <Phone className="w-5 h-5" />
+                  Call to get Best Price
+                </a>
+                <a
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-95 translate-gpu"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                  Inquire on WhatsApp
+                </a>
+              </div>
               <Link
                 href="/contact"
-                className="flex-1 inline-flex items-center justify-center gap-3 bg-background border border-white/10 hover:border-primary/50 text-white px-8 py-4 rounded-full font-semibold transition-all"
+                className="inline-flex items-center justify-center gap-3 bg-background border border-white/10 hover:border-primary/50 text-white px-8 py-3 rounded-full font-semibold transition-all text-sm opacity-80 hover:opacity-100"
               >
                 Contact via Form
               </Link>

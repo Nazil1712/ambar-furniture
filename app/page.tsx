@@ -143,16 +143,16 @@ export default function Home() {
           <div className="animate-in slide-in-from-bottom duration-1000 delay-400 fade-in fill-mode-both">
             <Link
               href="/products"
-              className="group inline-flex items-center bg-primary text-black rounded-full font-bold text-sm shadow-md shadow-primary/20 transition-all duration-300 active:scale-95 will-change-transform transform-gpu overflow-hidden"
+              className="group inline-flex items-center bg-primary text-black rounded-full font-bold text-sm shadow-md shadow-primary/20 transition-all duration-500 active:scale-95 will-change-transform transform-gpu overflow-hidden"
             >
-              <span className="px-5 py-3 md:px-8 md:py-5 transition-all duration-300 group-hover:-translate-x-1 group-active:-translate-x-1">
+              <span className="px-5 py-3 md:px-8 md:py-5 transition-all duration-500 group-hover:px-8.5 group-active:px-8.5 group-hover:-translate-x-1 group-active:-translate-x-1">
                 Explore Products
               </span>
-              <div className="w-2 my-0.5 self-stretch bg-black/0 group-hover:bg-black group-active:bg-black transition-all duration-300" />
-              <div className="px-4 py-3 md:px-6 md:py-5 text-black">
+              <div className="w-2 my-0.5 self-stretch bg-black/0 group-hover:bg-black group-active:bg-black transition-all duration-500" />
+              <div className="px-4 py-3 md:px-6 md:py-5 text-black transition-all duration-500">
                 <div className="relative w-5 h-5">
-                  <ArrowUpRight className="absolute inset-0 w-5 h-5 transition-all duration-300 group-hover:opacity-0 group-hover:rotate-45 group-active:opacity-0 group-active:rotate-45" />
-                  <ArrowRight className="absolute inset-0 w-5 h-5 transition-all duration-300 opacity-0 -rotate-45 group-hover:opacity-100 group-hover:rotate-0 group-active:opacity-100 group-active:rotate-0" />
+                  <ArrowUpRight className="absolute inset-0 w-5 h-5 transition-all duration-500 group-hover:opacity-0 group-hover:rotate-45 group-active:opacity-0 group-active:rotate-45" />
+                  <ArrowRight className="absolute inset-0 w-5 h-5 transition-all duration-500 opacity-0 -rotate-45 group-hover:opacity-100 group-hover:rotate-0 group-active:opacity-100 group-active:rotate-0" />
                 </div>
               </div>
             </Link>

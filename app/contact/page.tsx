@@ -5,7 +5,7 @@ export default function ContactPage() {
     <div className="min-h-screen bg-background pt-24 pb-16">
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mx-auto mb-12 md:mb-16 py-12 border-b border-white/10">
-          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-foreground">
+          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-foreground hover:text-primary cursor-pointer">
             Get in Touch
           </h1>
           <p className="text-muted text-sm md:text-lg">
@@ -18,7 +18,7 @@ export default function ContactPage() {
           {/* Contact Details */}
           <div className="lg:col-span-2 space-y-12">
             <div>
-              <h2 className="relative font-serif text-white text-2xl md:text-3xl font-bold mb-8 w-fit">
+              <h2 className="relative font-serif text-white text-2xl md:text-3xl font-bold mb-8 w-fit hover:text-primary cursor-pointer">
                 Contact Information
                 <span className="absolute -bottom-2 left-0 w-full h-1 bg-linear-to-r from-primary via-white/80 to-transparent rounded-full" />
               </h2>
@@ -82,7 +82,7 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <h2 className="relative font-serif text-white text-2xl md:text-3xl font-bold mb-4 md:mb-8 w-fit">
+              <h2 className="relative font-serif text-white text-2xl md:text-3xl font-bold mb-4 md:mb-8 w-fit hover:text-primary cursor-pointer">
                 Quick Connect
                 <span className="absolute -bottom-2 left-0 w-full h-1 bg-linear-to-r from-primary via-white/80 to-transparent rounded-full" />
               </h2>

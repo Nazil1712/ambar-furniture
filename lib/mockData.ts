@@ -43,14 +43,14 @@ export const featuredProductsArr: Product[] = [
     name: "Sultan",
     shortDescription: "Elegant and spacious premium cupboard",
     description:
-      "The Sultan is a masterpiece of modern craftsmanship, beautifully blending the comfort of a luxury sofa with the utility of a premium bed. Designed with high-density foam and rich upholstery to provide unmatched relaxation.",
-    price: 899,
+      "The Sultan Cupboard is a masterpiece of modern craftsmanship, designed to bring elegance and functionality into your space. Built with premium-quality materials and a refined finish, it offers ample storage while enhancing the aesthetics of your room. Its sturdy construction, smooth finishes, and thoughtfully designed compartments ensure durability, organization, and everyday convenience.",
+    price: 12000,
     image: imgSultan1,
     features: [
-      "High-density memory foam",
-      "Premium fabric upholstery",
-      "Easy conversion mechanism",
-      "Sturdy wooden frame",
+      "High-quality sheet metal construction",
+      "Premium-grade finish",
+      "Smooth and functional design",
+      "Durable and sturdy frame"
     ],
     category: "Cup Boards",
   },
@@ -60,12 +60,12 @@ export const featuredProductsArr: Product[] = [
     shortDescription: "Space-saving elegant folding bed",
     description:
       "Maximize your living space with our elegant folding bed. Engineered for comfort and durability, it seamlessly folds away when not in use, making it perfect for guest rooms and studio apartments.",
-    price: 349,
+    price: 15000,
     image: imgFoldingBed1,
     features: [
       "Foldable modern design",
       "Heavy-duty metal/wood frame",
-      "Breathable comfortable mattress included",
+      "Low-maintenance and long-lasting build",
       "Space-efficient",
     ],
     category: "Beds",
@@ -75,11 +75,11 @@ export const featuredProductsArr: Product[] = [
     name: "Wall Frame",
     shortDescription: "Artisan crafted wood wall panelling",
     description:
-      "Transform your walls into pieces of art with our custom wall framing. Hand-crafted from premium wood, these frames add a touch of warmth and sophistication to any interior space.",
-    price: 299,
+      "Transform your walls into pieces of art with our custom wall framing. Hand-crafted from premium metal sheet, these frames add a touch of warmth and sophistication to any interior space.",
+    price: 10000,
     image: imgWallFraming2,
     features: [
-      "Premium rich wood finish",
+      "Premium rich sheet metal finish",
       "Customizable dimensions",
       "Easy installation",
       "Timeless aesthetic",
@@ -92,7 +92,7 @@ export const featuredProductsArr: Product[] = [
     shortDescription: "Sleek and functional kitchen storage",
     description:
       "Organize your culinary space with our modern kitchen cupboards. Designed for maximum storage efficiency while maintaining a sleek, minimalist aesthetic that complements any modern home.",
-    price: 1299,
+    price: 13000,
     image: imgKitchen1,
     features: [
       "Soft-close hinges",
@@ -110,14 +110,14 @@ export const mockProducts: Product[] = [
     name: "Sultan 1",
     shortDescription: "Elegant and spacious premium cupboard",
     description:
-      "The Sultan is a masterpiece of modern craftsmanship, beautifully blending the comfort of a luxury sofa with the utility of a premium bed. Designed with high-density foam and rich upholstery to provide unmatched relaxation.",
-    price: 899,
+      "The Sultan Cupboard is a masterpiece of modern craftsmanship, designed to bring elegance and functionality into your space. Built with premium-quality materials and a refined finish, it offers ample storage while enhancing the aesthetics of your room. Its sturdy construction, smooth finishes, and thoughtfully designed compartments ensure durability, organization, and everyday convenience.",
+    price: 12000,
     image: imgSultan1,
     features: [
-      "High-density memory foam",
-      "Premium fabric upholstery",
-      "Easy conversion mechanism",
-      "Sturdy wooden frame",
+      "High-quality sheet metal construction",
+      "Premium-grade finish",
+      "Smooth and functional design",
+      "Durable and sturdy frame"
     ],
     category: "Cup Boards",
   },
@@ -126,14 +126,14 @@ export const mockProducts: Product[] = [
     name: "Sultan 2",
     shortDescription: "Elegant and spacious premium cupboard",
     description:
-      "The Sultan is a masterpiece of modern craftsmanship, beautifully blending the comfort of a luxury sofa with the utility of a premium bed. Designed with high-density foam and rich upholstery to provide unmatched relaxation.",
-    price: 899,
+      "The Sultan Cupboard is a masterpiece of modern craftsmanship, designed to bring elegance and functionality into your space. Built with premium-quality materials and a refined finish, it offers ample storage while enhancing the aesthetics of your room. Its sturdy construction, smooth finishes, and thoughtfully designed compartments ensure durability, organization, and everyday convenience.",
+    price: 12000,
     image: imgSultan2,
     features: [
-      "High-density memory foam",
-      "Premium fabric upholstery",
-      "Easy conversion mechanism",
-      "Sturdy wooden frame",
+      "High-quality sheet metal construction",
+      "Premium-grade finish",
+      "Smooth and functional design",
+      "Durable and sturdy frame"
     ],
     category: "Cup Boards",
   },
@@ -142,14 +142,14 @@ export const mockProducts: Product[] = [
     name: "Sultan 3",
     shortDescription: "Elegant and spacious premium cupboard",
     description:
-      "The Sultan is a masterpiece of modern craftsmanship, beautifully blending the comfort of a luxury sofa with the utility of a premium bed. Designed with high-density foam and rich upholstery to provide unmatched relaxation.",
-    price: 899,
+      "The Sultan Cupboard is a masterpiece of modern craftsmanship, designed to bring elegance and functionality into your space. Built with premium-quality materials and a refined finish, it offers ample storage while enhancing the aesthetics of your room. Its sturdy construction, smooth finishes, and thoughtfully designed compartments ensure durability, organization, and everyday convenience.",
+    price: 12000,
     image: imgSultan3,
     features: [
-      "High-density memory foam",
-      "Premium fabric upholstery",
-      "Easy conversion mechanism",
-      "Sturdy wooden frame",
+      "High-quality sheet metal construction",
+      "Premium-grade finish",
+      "Smooth and functional design",
+      "Durable and sturdy frame"
     ],
     category: "Cup Boards",
   },
@@ -158,14 +158,14 @@ export const mockProducts: Product[] = [
     name: "Sultan 4",
     shortDescription: "Elegant and spacious premium cupboard",
     description:
-      "The Sultan is a masterpiece of modern craftsmanship, beautifully blending the comfort of a luxury sofa with the utility of a premium bed. Designed with high-density foam and rich upholstery to provide unmatched relaxation.",
-    price: 899,
+      "The Sultan Cupboard is a masterpiece of modern craftsmanship, designed to bring elegance and functionality into your space. Built with premium-quality materials and a refined finish, it offers ample storage while enhancing the aesthetics of your room. Its sturdy construction, smooth finishes, and thoughtfully designed compartments ensure durability, organization, and everyday convenience.",
+    price: 12000,
     image: imgSultan4,
     features: [
-      "High-density memory foam",
-      "Premium fabric upholstery",
-      "Easy conversion mechanism",
-      "Sturdy wooden frame",
+      "High-quality sheet metal construction",
+      "Premium-grade finish",
+      "Smooth and functional design",
+      "Durable and sturdy frame"
     ],
     category: "Cup Boards",
   },
@@ -174,14 +174,14 @@ export const mockProducts: Product[] = [
     name: "Sultan 5",
     shortDescription: "Elegant and spacious premium cupboard",
     description:
-      "The Sultan is a masterpiece of modern craftsmanship, beautifully blending the comfort of a luxury sofa with the utility of a premium bed. Designed with high-density foam and rich upholstery to provide unmatched relaxation.",
-    price: 899,
+      "The Sultan Cupboard is a masterpiece of modern craftsmanship, designed to bring elegance and functionality into your space. Built with premium-quality materials and a refined finish, it offers ample storage while enhancing the aesthetics of your room. Its sturdy construction, smooth finishes, and thoughtfully designed compartments ensure durability, organization, and everyday convenience.",
+    price: 12000,
     image: imgSultan5,
     features: [
-      "High-density memory foam",
-      "Premium fabric upholstery",
-      "Easy conversion mechanism",
-      "Sturdy wooden frame",
+      "High-quality sheet metal construction",
+      "Premium-grade finish",
+      "Smooth and functional design",
+      "Durable and sturdy frame"
     ],
     category: "Cup Boards",
   },
@@ -190,14 +190,14 @@ export const mockProducts: Product[] = [
     name: "Sultan 6",
     shortDescription: "Elegant and spacious premium cupboard",
     description:
-      "The Sultan is a masterpiece of modern craftsmanship, beautifully blending the comfort of a luxury sofa with the utility of a premium bed. Designed with high-density foam and rich upholstery to provide unmatched relaxation.",
-    price: 899,
+      "The Sultan Cupboard is a masterpiece of modern craftsmanship, designed to bring elegance and functionality into your space. Built with premium-quality materials and a refined finish, it offers ample storage while enhancing the aesthetics of your room. Its sturdy construction, smooth finishes, and thoughtfully designed compartments ensure durability, organization, and everyday convenience.",
+    price: 12000,
     image: imgSultan6,
     features: [
-      "High-density memory foam",
-      "Premium fabric upholstery",
-      "Easy conversion mechanism",
-      "Sturdy wooden frame",
+      "High-quality sheet metal construction",
+      "Premium-grade finish",
+      "Smooth and functional design",
+      "Durable and sturdy frame"
     ],
     category: "Cup Boards",
   },
@@ -206,14 +206,14 @@ export const mockProducts: Product[] = [
     name: "Sultan 7",
     shortDescription: "Elegant and spacious premium cupboard",
     description:
-      "The Sultan is a masterpiece of modern craftsmanship, beautifully blending the comfort of a luxury sofa with the utility of a premium bed. Designed with high-density foam and rich upholstery to provide unmatched relaxation.",
-    price: 899,
+      "The Sultan Cupboard is a masterpiece of modern craftsmanship, designed to bring elegance and functionality into your space. Built with premium-quality materials and a refined finish, it offers ample storage while enhancing the aesthetics of your room. Its sturdy construction, smooth finishes, and thoughtfully designed compartments ensure durability, organization, and everyday convenience.",
+    price: 12000,
     image: imgSultan7,
     features: [
-      "High-density memory foam",
-      "Premium fabric upholstery",
-      "Easy conversion mechanism",
-      "Sturdy wooden frame",
+      "High-quality sheet metal construction",
+      "Premium-grade finish",
+      "Smooth and functional design",
+      "Durable and sturdy frame"
     ],
     category: "Cup Boards",
   },
@@ -223,12 +223,12 @@ export const mockProducts: Product[] = [
     shortDescription: "Space-saving elegant folding bed",
     description:
       "Maximize your living space with our elegant folding bed. Engineered for comfort and durability, it seamlessly folds away when not in use, making it perfect for guest rooms and studio apartments.",
-    price: 349,
+    price: 15000,
     image: imgFoldingBed1,
     features: [
       "Foldable modern design",
       "Heavy-duty metal/wood frame",
-      "Breathable comfortable mattress included",
+      "Low-maintenance and long-lasting build",
       "Space-efficient",
     ],
     category: "Beds",
@@ -239,12 +239,12 @@ export const mockProducts: Product[] = [
     shortDescription: "Space-saving elegant folding bed",
     description:
       "Maximize your living space with our elegant folding bed. Engineered for comfort and durability, it seamlessly folds away when not in use, making it perfect for guest rooms and studio apartments.",
-    price: 349,
+    price: 15000,
     image: imgFoldingBed2,
     features: [
       "Foldable modern design",
       "Heavy-duty metal/wood frame",
-      "Breathable comfortable mattress included",
+      "Low-maintenance and long-lasting build",
       "Space-efficient",
     ],
     category: "Beds",
@@ -255,12 +255,12 @@ export const mockProducts: Product[] = [
     shortDescription: "Space-saving elegant folding bed",
     description:
       "Maximize your living space with our elegant folding bed. Engineered for comfort and durability, it seamlessly folds away when not in use, making it perfect for guest rooms and studio apartments.",
-    price: 349,
+    price: 15000,
     image: imgFoldingBed3,
     features: [
       "Foldable modern design",
       "Heavy-duty metal/wood frame",
-      "Breathable comfortable mattress included",
+      "Low-maintenance and long-lasting build",
       "Space-efficient",
     ],
     category: "Beds",
@@ -271,12 +271,12 @@ export const mockProducts: Product[] = [
     shortDescription: "Space-saving elegant folding bed",
     description:
       "Maximize your living space with our elegant folding bed. Engineered for comfort and durability, it seamlessly folds away when not in use, making it perfect for guest rooms and studio apartments.",
-    price: 349,
+    price: 15000,
     image: imgFoldingBed4,
     features: [
       "Foldable modern design",
       "Heavy-duty metal/wood frame",
-      "Breathable comfortable mattress included",
+      "Low-maintenance and long-lasting build",
       "Space-efficient",
     ],
     category: "Beds",
@@ -287,12 +287,12 @@ export const mockProducts: Product[] = [
     shortDescription: "Space-saving elegant folding bed",
     description:
       "Maximize your living space with our elegant folding bed. Engineered for comfort and durability, it seamlessly folds away when not in use, making it perfect for guest rooms and studio apartments.",
-    price: 349,
+    price: 15000,
     image: imgFoldingBed5,
     features: [
       "Foldable modern design",
       "Heavy-duty metal/wood frame",
-      "Breathable comfortable mattress included",
+      "Low-maintenance and long-lasting build",
       "Space-efficient",
     ],
     category: "Beds",
@@ -303,12 +303,12 @@ export const mockProducts: Product[] = [
     shortDescription: "Space-saving elegant folding bed",
     description:
       "Maximize your living space with our elegant folding bed. Engineered for comfort and durability, it seamlessly folds away when not in use, making it perfect for guest rooms and studio apartments.",
-    price: 349,
+    price: 15000,
     image: imgFoldingBed6,
     features: [
       "Foldable modern design",
       "Heavy-duty metal/wood frame",
-      "Breathable comfortable mattress included",
+      "Low-maintenance and long-lasting build",
       "Space-efficient",
     ],
     category: "Beds",
@@ -318,11 +318,11 @@ export const mockProducts: Product[] = [
     name: "Wall Frame 1",
     shortDescription: "Artisan crafted wood wall panelling",
     description:
-      "Transform your walls into pieces of art with our custom wall framing. Hand-crafted from premium wood, these frames add a touch of warmth and sophistication to any interior space.",
-    price: 299,
+      "Transform your walls into pieces of art with our custom wall framing. Hand-crafted from premium metal sheet, these frames add a touch of warmth and sophistication to any interior space.",
+    price: 10000,
     image: imgWallFraming1,
     features: [
-      "Premium rich wood finish",
+      "Premium rich sheet metal finish",
       "Customizable dimensions",
       "Easy installation",
       "Timeless aesthetic",
@@ -334,11 +334,11 @@ export const mockProducts: Product[] = [
     name: "Wall Frame 2",
     shortDescription: "Artisan crafted wood wall panelling",
     description:
-      "Transform your walls into pieces of art with our custom wall framing. Hand-crafted from premium wood, these frames add a touch of warmth and sophistication to any interior space.",
-    price: 299,
+      "Transform your walls into pieces of art with our custom wall framing. Hand-crafted from premium metal sheet, these frames add a touch of warmth and sophistication to any interior space.",
+    price: 10000,
     image: imgWallFraming2,
     features: [
-      "Premium rich wood finish",
+      "Premium rich sheet metal finish",
       "Customizable dimensions",
       "Easy installation",
       "Timeless aesthetic",
@@ -350,11 +350,11 @@ export const mockProducts: Product[] = [
     name: "Wall Frame 3",
     shortDescription: "Artisan crafted wood wall panelling",
     description:
-      "Transform your walls into pieces of art with our custom wall framing. Hand-crafted from premium wood, these frames add a touch of warmth and sophistication to any interior space.",
-    price: 299,
+      "Transform your walls into pieces of art with our custom wall framing. Hand-crafted from premium metal sheet, these frames add a touch of warmth and sophistication to any interior space.",
+    price: 10000,
     image: imgWallFraming3,
     features: [
-      "Premium rich wood finish",
+      "Premium rich sheet metal finish",
       "Customizable dimensions",
       "Easy installation",
       "Timeless aesthetic",
@@ -366,11 +366,11 @@ export const mockProducts: Product[] = [
     name: "Wall Frame 4",
     shortDescription: "Artisan crafted wood wall panelling",
     description:
-      "Transform your walls into pieces of art with our custom wall framing. Hand-crafted from premium wood, these frames add a touch of warmth and sophistication to any interior space.",
-    price: 299,
+      "Transform your walls into pieces of art with our custom wall framing. Hand-crafted from premium metal sheet, these frames add a touch of warmth and sophistication to any interior space.",
+    price: 10000,
     image: imgWallFraming4,
     features: [
-      "Premium rich wood finish",
+      "Premium rich sheet metal finish",
       "Customizable dimensions",
       "Easy installation",
       "Timeless aesthetic",
@@ -382,11 +382,11 @@ export const mockProducts: Product[] = [
     name: "Wall Frame 6",
     shortDescription: "Artisan crafted wood wall panelling",
     description:
-      "Transform your walls into pieces of art with our custom wall framing. Hand-crafted from premium wood, these frames add a touch of warmth and sophistication to any interior space.",
-    price: 299,
+      "Transform your walls into pieces of art with our custom wall framing. Hand-crafted from premium metal sheet, these frames add a touch of warmth and sophistication to any interior space.",
+    price: 10000,
     image: imgWallFraming6,
     features: [
-      "Premium rich wood finish",
+      "Premium rich sheet metal finish",
       "Customizable dimensions",
       "Easy installation",
       "Timeless aesthetic",
@@ -398,11 +398,11 @@ export const mockProducts: Product[] = [
     name: "Wall Frame 7",
     shortDescription: "Artisan crafted wood wall panelling",
     description:
-      "Transform your walls into pieces of art with our custom wall framing. Hand-crafted from premium wood, these frames add a touch of warmth and sophistication to any interior space.",
-    price: 299,
+      "Transform your walls into pieces of art with our custom wall framing. Hand-crafted from premium metal sheet, these frames add a touch of warmth and sophistication to any interior space.",
+    price: 10000,
     image: imgWallFraming7,
     features: [
-      "Premium rich wood finish",
+      "Premium rich sheet metal finish",
       "Customizable dimensions",
       "Easy installation",
       "Timeless aesthetic",
@@ -414,11 +414,11 @@ export const mockProducts: Product[] = [
     name: "Wall Frame 8",
     shortDescription: "Artisan crafted wood wall panelling",
     description:
-      "Transform your walls into pieces of art with our custom wall framing. Hand-crafted from premium wood, these frames add a touch of warmth and sophistication to any interior space.",
-    price: 299,
+      "Transform your walls into pieces of art with our custom wall framing. Hand-crafted from premium metal sheet, these frames add a touch of warmth and sophistication to any interior space.",
+    price: 10000,
     image: imgWallFraming8,
     features: [
-      "Premium rich wood finish",
+      "Premium rich sheet metal finish",
       "Customizable dimensions",
       "Easy installation",
       "Timeless aesthetic",
@@ -430,11 +430,11 @@ export const mockProducts: Product[] = [
     name: "Wall Frame 9",
     shortDescription: "Artisan crafted wood wall panelling",
     description:
-      "Transform your walls into pieces of art with our custom wall framing. Hand-crafted from premium wood, these frames add a touch of warmth and sophistication to any interior space.",
-    price: 299,
+      "Transform your walls into pieces of art with our custom wall framing. Hand-crafted from premium metal sheet, these frames add a touch of warmth and sophistication to any interior space.",
+    price: 10000,
     image: imgWallFraming9,
     features: [
-      "Premium rich wood finish",
+      "Premium rich sheet metal finish",
       "Customizable dimensions",
       "Easy installation",
       "Timeless aesthetic",
@@ -447,7 +447,7 @@ export const mockProducts: Product[] = [
     shortDescription: "Sleek and functional kitchen storage",
     description:
       "Organize your culinary space with our modern kitchen cupboards. Designed for maximum storage efficiency while maintaining a sleek, minimalist aesthetic that complements any modern home.",
-    price: 1299,
+    price: 13000,
     image: imgKitchen1,
     features: [
       "Soft-close hinges",
@@ -463,7 +463,7 @@ export const mockProducts: Product[] = [
     shortDescription: "Sleek and functional kitchen storage",
     description:
       "Organize your culinary space with our modern kitchen cupboards. Designed for maximum storage efficiency while maintaining a sleek, minimalist aesthetic that complements any modern home.",
-    price: 1299,
+    price: 13000,
     image: imgKitchen2,
     features: [
       "Soft-close hinges",
@@ -479,7 +479,7 @@ export const mockProducts: Product[] = [
     shortDescription: "Sleek and functional kitchen storage",
     description:
       "Organize your culinary space with our modern kitchen cupboards. Designed for maximum storage efficiency while maintaining a sleek, minimalist aesthetic that complements any modern home.",
-    price: 1299,
+    price: 13000,
     image: imgKitchen3,
     features: [
       "Soft-close hinges",
@@ -495,7 +495,7 @@ export const mockProducts: Product[] = [
     shortDescription: "Sleek and functional kitchen storage",
     description:
       "Organize your culinary space with our modern kitchen cupboards. Designed for maximum storage efficiency while maintaining a sleek, minimalist aesthetic that complements any modern home.",
-    price: 1299,
+    price: 13000,
     image: imgKitchen4,
     features: [
       "Soft-close hinges",

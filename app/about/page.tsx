@@ -9,7 +9,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="container mx-auto py-12 flex items-center justify-center overflow-hidden  border-b border-white/10">
         <div className="relative z-10 text-center text-white px-6">
-          <h1 className="font-serif text-4xl md:text-7xl font-bold tracking-tight mb-6">
+          <h1 className="font-serif text-4xl md:text-7xl font-bold tracking-tight mb-6 hover:text-primary cursor-pointer" >
             Our Story
           </h1>
           <p className="text-sm md:text-lg max-w-2xl mx-auto text-white/90">
