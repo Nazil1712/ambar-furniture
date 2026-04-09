@@ -87,7 +87,7 @@ export default function Home() {
                 "radial-gradient(circle at bottom, rgba(3, 252, 173, 0.4) 0%, transparent 70%)",
             }}
           />
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-primary/20 backdrop-blur-sm" />
+          <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary/30 to-transparent backdrop-blur-sm" />
 
           {/* Decorative Background Text */}
           <div className="hidden md:absolute md:flex -bottom-10 left-0 right-0 justify-center px-4 opacity-[0.03] select-none pointer-events-none">
@@ -212,10 +212,13 @@ export default function Home() {
             </div>
             <Link
               href="/products"
-              className="inline-flex items-center gap-2 text-primary dark:text-secondary-light font-semibold hover:underline underline-offset-4 mb-2 text-sm pt-4 md:py-0"
+              className="group inline-flex items-center gap-2 text-primary dark:text-secondary-light font-semibold hover:underline underline-offset-4 mb-2 text-sm pt-4 md:py-0"
             >
               View All Products
-              <ArrowRight className="w-4 h-4" />
+              <div className="relative w-4 h-4">
+                <ArrowUpRight className="absolute inset-0 w-4 h-4 transition-all duration-300 group-hover:opacity-0 group-hover:rotate-45" />
+                <ArrowRight className="absolute inset-0 w-4 h-4 transition-all duration-300 opacity-0 -rotate-45 group-hover:opacity-100 group-hover:rotate-0" />
+              </div>
             </Link>
           </div>
 

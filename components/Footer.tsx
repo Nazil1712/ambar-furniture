@@ -107,7 +107,7 @@ export default function Footer() {
         <FooterSection title="Quick Links">
           <ul className="flex flex-col gap-3 text-sm text-foreground/80">
             <li>
-              <Link href="/" className="hover:text-primary transition-colors underline-animated">
+              <Link href="/" className="hover:text-primary underline-animated">
                 Home
               </Link>
             </li>
@@ -216,7 +216,7 @@ export default function Footer() {
       </div>
 
       <div className="container mx-auto px-6 md:px-12 border-t border-muted/20 pt-8 text-muted text-sm flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="text-center">
+        <p className="text-center text-xs md:text-sm">
           &copy; {new Date().getFullYear()}{" "}
           <Link
             href="/"
@@ -228,7 +228,7 @@ export default function Footer() {
           </Link>
           . All rights reserved.
         </p>
-        <p>
+        <p className="text-xs md:text-sm">
           Developed with ❤️ by{" "}
           <Link
             href="https://www.linkedin.com/in/nazil-dhalwala-267586223/"
